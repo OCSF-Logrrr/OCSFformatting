@@ -11,7 +11,6 @@
 ├── getlog.py        # Elasticsearch에서 로그 수집 및 출력
 ├── mapping.yaml     # (예정) OCSF 클래스 및 필드 매핑 정의 파일
 ├── format.py        # (예정) OCSF 스키마에 맞춘 로그 포맷터
-├── requirements.txt # 필요한 Python 라이브러리 명세
 └── changelog.md     # getlog.py 변경 이력 문서
 ```
 
