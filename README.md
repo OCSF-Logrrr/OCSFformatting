@@ -6,7 +6,7 @@
 이 레포지토리는 Elasticsearch에서 로그를 수집하고, 이를 OCSF(Open Cybersecurity Schema Framework) 스키마에 맞춰 변환하기 위한 Python 스크립트를 포함하고 있습니다.
 
 #### 구성 요소
-```python
+```
 .
 ├── getlog.py        # Elasticsearch에서 로그 수집 및 출력
 ├── mapping.yaml     # (예정) OCSF 클래스 및 필드 매핑 정의 파일
