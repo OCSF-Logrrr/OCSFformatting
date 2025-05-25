@@ -12,7 +12,8 @@ es = Elasticsearch(
 log_line = es.search(
     index="winlogbeat-*", # 인덱스 설정
     query={"match_all": {}},
-    size=1 # 출력 개수 설정
+    size=1, # 출력 개수 설정
+    sort=[{"@timestamp": {"order": "desc"}}] # 로그를 최신 우선으로 가져옴.
 )
 
 for hit in log_line["hits"]["hits"]: # [][] -> elastic 검색 응답 구조
