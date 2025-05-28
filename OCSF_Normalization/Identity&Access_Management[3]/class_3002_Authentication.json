@@ -1,0 +1,204 @@
+{
+  "activity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Logon" },
+      "2": { "captopn": "Logoff" },
+      "3": { "caption": "Authentication Ticket" },
+      "4": { "caption": "Service Ticket Request" },
+      "5": { "caption": "Service Ticket Renew" },
+      "6": { "caption": "Preauth" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "actor": {
+    "process": {
+      "cpid": "UUID",
+      "pid": "Integer",
+      "uid": "String"
+    }
+  },
+  "user": {
+    "name": "String",
+    "uid": "String"
+  },
+  "auth_protocol": "String",
+  "auth_protocol_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "NTLM" },
+      "2": { "caption": "Kerberos" },
+      "3": { "caption": "Digest" },
+      "4": { "caption": "OpenID" },
+      "5": { "caption": "SAML" },
+      "6": { "caption": "UOAUTH 2.0" },
+      "7": { "caption": "PAP" },
+      "8": { "caption": "CHAP" },
+      "9": { "caption": "EAP" },
+      "10": { "caption": "RADIUS" },
+      "11": { "caption": "Basic Authentication" },
+      "12": { "caption": "LDAP" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "category_uid": 3,
+  "certificate": {
+    "issuer": "String",
+    "serial_number": "String"
+  },
+  "class_uid": 3002,
+  "dst_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "svc_name": "String",
+    "uid": "String"
+  },
+  "is_mfa": "Boolean",
+  "is_remote": "Boolean",
+  "logon_type": "String",
+  "logon_type_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "System" },
+      "2": { "caption": "Interactive" },
+      "3": { "caption": "Network" },
+      "4": { "caption": "Batch" },
+      "5": { "caption": "OS Service" },
+      "7": { "caption": "Unlock" },
+      "8": { "caption": "Network Cleartext" },
+      "9": { "caption": "New Credentials" },
+      "10": { "caption": "Remote Interactive" },
+      "11": { "caption": "Cached Interactive" },
+      "12": { "caption": "Cached Remote Interactive" },
+      "13": { "caption": "Cached Unlock" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "message": "String",
+  "metadata": {
+    "product": {
+      "name": "String",
+      "uid": "String"
+    },
+    "version": "1.5"
+  },
+  "observables": {
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Hostname" },
+        "2": { "caption": "IP Address" },
+        "3": { "caption": "MAC Address" },
+        "4": { "caption": "User Name" },
+        "5": { "caption": "Email Address" },
+        "6": { "caption": "URL String" },
+        "7": { "caption": "File Name" },
+        "8": { "caption": "Hash" },
+        "9": { "caption": "Process Name" },
+        "10": { "caption": "Resource UID" },
+        "11": { "caption": "Port" },
+        "12": { "caption": "Subnet" },
+        "13": { "caption": "Command Line" },
+        "14": { "caption": "Country" },
+        "15": { "caption": "Process ID" },
+        "16": { "caption": "HTTP User-Agent" },
+        "17": { "caption": "CWE Object: uid" },
+        "18": { "caption": "CVE Object: uid" },
+        "19": { "caption": "User Credential ID" },
+        "20": { "caption": "Endpoint" },
+        "21": { "caption": "User" },
+        "22": { "caption": "Email" },
+        "23": { "caption": "Uniform Resource Locator" },
+        "24": { "caption": "File" },
+        "25": { "caption": "Process" },
+        "26": { "caption": "Geo Location" },
+        "27": { "caption": "Container" },
+        "28": { "caption": "Registry Key" },
+        "29": { "caption": "Registry Value" },
+        "30": { "caption": "Fingerprint" },
+        "31": { "caption": "User Object: uid" },
+        "32": { "caption": "Group Object: name" },
+        "33": { "caption": "Group Object: uid" },
+        "34": { "caption": "Account Object: name" },
+        "35": { "caption": "Account Object: uid" },
+        "36": { "caption": "Script Content" },
+        "37": { "caption": "Serial Number" },
+        "38": { "caption": "Resource Details Object: name" },
+        "39": { "caption": "Process Entity Object: uid" },
+        "40": { "caption": "Email Object: subject" },
+        "41": { "caption": "Email Object: uid" },
+        "42": { "caption": "Message UID" },
+        "43": { "caption": "Registry Value Object: name" },
+        "44": { "caption": "Advisory Object: uid" },
+        "45": { "caption": "File Path" },
+        "46": { "caption": "Registry Key Path" },
+        "99": { "caption": "Other" }
+      }
+    }
+  },
+  "service": {
+    "name": "String",
+    "uid": "String"
+  },
+  "session": {
+    "created_time": "Timestamp",
+    "is_remote": "Boolean",
+    "issuer": "String",
+    "uid": "String"
+  },
+  "severity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Informational" },
+      "2": { "caption": "Low" },
+      "3": { "caption": "Medium" },
+      "4": { "caption": "High" },
+      "5": { "caption": "Critical" },
+      "6": { "caption": "Fatal" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "src_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "svc_name": "String",
+    "uid": "String"
+  },
+  "status": {
+    "Success": "LOGOFF_USER_INITIATED, LOGOFF_OTHER",
+    "Failure": "USER_DOES_NOT_EXIST, INVALID_CREDENTIALS, ACCOUNT_DISABLED, ACCOUNT_LOCKED_OUT, PASSWORD_EXPIRED"
+  },
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Success" },
+      "2": { "caption": "Failure" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "Integer",
+  "type_uid": {
+    "enum": {
+      "300200": { "caption": "Authentication: Unknown" },
+      "300201": { "caption": "Authentication: Logon" },
+      "300202": { "caption": "Authentication: Logoff" },
+      "300203": { "caption": "Authentication: Authentication Ticket" },
+      "300204": { "caption": "Authentication: Service Ticket Request" },
+      "300205": { "caption": "Authentication: Service Ticket Renew" },
+      "300206": { "caption": "Authentication: Preauth" },
+      "300299": { "caption": "Authentication: Other" }
+    }
+  }
+}
+  
