@@ -2,6 +2,13 @@
 
 ---
 
+해당 getlog.py는 Elasticsearch에서 로그를 가져와 정규화 진행 후 다시 Elasticsearch에 저장하기 위해 사용하는 파일로,
+현재 프로젝트 진행 방향과는 맞지 않아 앞으로 사용하지 않을 예정입니다.
+
+아래는 참고용으로만 봐주시고, 더 이상 업데이트하지 않겠습니다.
+
+---
+
 ### Overview
 이 레포지토리는 Elasticsearch에서 로그를 수집하고, 이를 OCSF(Open Cybersecurity Schema Framework) 스키마에 맞춰 변환하기 위한 Python 스크립트를 포함하고 있습니다.
 
@@ -9,7 +16,7 @@
 ```
 .
 ├── getlog.py        # Elasticsearch에서 로그 수집 및 출력
-├── mapping.yaml     # (예정) OCSF 클래스 및 필드 매핑 정의 파일
+├── mapping.yaml     # (예정) OCSF 클래스 및 필드 매핑 정의 파일 -> 취소
 ├── format.py        # (예정) OCSF 스키마에 맞춘 로그 포맷터
 └── changelog.md     # getlog.py 변경 이력 문서
 ```
