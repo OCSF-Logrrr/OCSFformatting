@@ -8,14 +8,14 @@ OCSFformatting은 보안 로그를 [OCSF(Open Cybersecurity Schema Framework)](h
 ## ⚙️ 구성 요소
 
 - `getlog`  
-  Elasticsearch에 저장된 로그를 가져올 수 있는 파이썬 코드.
-  보통 디버깅이나 Elasticsearch에 어떻게 저장되어 있는지 확인하기 위헤 사용될 예정.
-  실제 프로젝트에선 사용하지 않을 예정.
+  Elasticsearch에 저장된 로그를 가져올 수 있는 파이썬 코드.  
+  보통 디버깅이나 Elasticsearch에 어떻게 저장되어 있는지 확인하기 위헤 사용될 예정.  
+  실제 프로젝트에선 사용하지 않을 예정.  
 
 - `OCSF_Normalization/`  
-  공식 OCSF 스키마 JSON 파일 디렉토리.
-  OCSF의 클래스마다 JSON 파일로 변환하여 저장.
-  공식 OCSF github엔, Object와 base_event 등이 따로 정리되어 있어, 우선 모두 한 파일에 작성 후에 프로젝트 진행에 따라 모듈화를 진행해볼 예정.
+  공식 OCSF 스키마 JSON 파일 디렉토리.  
+  OCSF의 클래스마다 JSON 파일로 변환하여 저장.  
+  공식 OCSF github엔, Object와 base_event 등이 따로 정리되어 있어, 우선 모두 한 파일에 작성 후에 프로젝트 진행에 따라 모듈화를 진행해볼 예정.  
 
 ---
 
