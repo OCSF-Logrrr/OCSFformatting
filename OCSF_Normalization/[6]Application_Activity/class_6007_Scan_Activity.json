@@ -1,0 +1,176 @@
+{
+  "activity_id": {
+        "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Started" },
+        "2": { "caption": "Completed" },
+        "3": { "caption": "Cancelled" },
+        "4": { "caption": "Duration Violation" },
+        "5": { "caption": "Pause Violation" },
+        "6": { "caption": "Error" },
+        "7": { "caption": "Paused" },
+        "8": { "caption": "Resumed" },
+        "9": { "caption": "Restarted" },
+        "10": { "caption": "Delayed" },
+        "99": { "caption": "Other" }
+    }
+  },
+  "category_uid": "Application Activity",
+  "class_uid": 6007,
+  "commmand_uid": "String",
+  "duration": "Long",
+  "end_time": "Timestamp",
+  "message": "String",
+  "metadata": {
+    "log_name": "String",
+    "log_provider": "String",
+    "original_time": "String",
+    "product": {
+      "name": "String",
+      "uid": "String",
+      "vendor_name": "String",
+      "version": "String"
+    },
+    "tenant_uid": "String",
+    "version": "String"
+  },
+  "num_detections": "Integer",
+  "num_files": "Integer",
+  "num_folders": "Integer",
+  "num_network_items": "Integer",
+  "num_processes": "Integer",
+  "num_registry_items": "Integer",
+  "num_resolutions": "Integer",
+  "num_skipped_items": "Integer",
+  "num_trusted_items": "Integer",
+  "observables": {
+    "name": "String",
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Hostname" },
+        "2": { "caption": "IP Address" },
+        "3": { "caption": "MAC Address" },
+        "4": { "caption": "User Name" },
+        "5": { "caption": "Email Address" },
+        "6": { "caption": "URL String" },
+        "7": { "caption": "File Name" },
+        "8": { "caption": "Hash" },
+        "9": { "caption": "Process Name" },
+        "10": { "caption": "Resource UID" },
+        "11": { "caption": "Port" },
+        "12": { "caption": "Subnet" },
+        "13": { "caption": "Command Line" },
+        "14": { "caption": "Country" },
+        "15": { "caption": "Process ID" },
+        "16": { "caption": "HTTP User-Agent" },
+        "17": { "caption": "CWE Object: uid" },
+        "18": { "caption": "CVE Object: uid" },
+        "19": { "caption": "User Credential ID" },
+        "20": { "caption": "Endpoint" },
+        "21": { "caption": "User" },
+        "22": { "caption": "Email" },
+        "23": { "caption": "Uniform Resource Locator" },
+        "24": { "caption": "File" },
+        "25": { "caption": "Process" },
+        "26": { "caption": "Geo Location" },
+        "27": { "caption": "Container" },
+        "28": { "caption": "Registry Key" },
+        "29": { "caption": "Registry Value" },
+        "30": { "caption": "Fingerprint" },
+        "31": { "caption": "User Object: uid" },
+        "32": { "caption": "Group Object: name" },
+        "33": { "caption": "Group Object: uid" },
+        "34": { "caption": "Account Object: name" },
+        "35": { "caption": "Account Object: uid" },
+        "36": { "caption": "Script Content" },
+        "37": { "caption": "Serial Number" },
+        "38": { "caption": "Resource Details Object: name" },
+        "39": { "caption": "Process Entity Object: uid" },
+        "40": { "caption": "Email Object: subject" },
+        "41": { "caption": "Email Object: uid" },
+        "42": { "caption": "Message UID" },
+        "43": { "caption": "Registry Value Object: name" },
+        "44": { "caption": "Advisory Object: uid" },
+        "45": { "caption": "File Path" },
+        "46": { "caption": "Registry Key Path" },
+        "99": { "caption": "Other" }
+      }
+    }
+  },
+  "policy": {
+    "is_applied": "Boolean",
+    "name": "String",
+    "uid": "String",
+    "version": "String"
+  },
+  "scan": {
+    "type_id": {
+        "enum": {
+            "0": {"caption": "Unknown"},
+            "1": {"caption": "Manual"},
+            "2": {"caption": "Scheduled"},
+            "3": {"caption": "Updated Content"},
+            "4": {"caption": "Quarantined Items"},
+            "5": {"caption": "Attached Media"},
+            "6": {"caption": "User Logon"},
+            "7": {"caption": "ELAM"},
+            "99": {"caption": "Other"}
+        }
+    },
+    "uid": "String"
+  },
+  "schedule_uid": "String",
+  "severity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Informational" },
+      "2": { "caption": "Low" },
+      "3": { "caption": "Medium" },
+      "4": { "caption": "High" },
+      "5": { "caption": "Critical" },
+      "6": { "caption": "Fatal" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "start_time": "Timestamp",
+  "status": "String",
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Success" },
+      "2": { "caption": "Failure" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "540",
+  "total": "Integer",
+  "type_id": {
+    "enum": {
+        "0": {"caption": "Unknown"},
+        "1": {"caption": "Database"},
+        "2": {"caption": "Databucket"},
+        "3": {"caption": "Table"},
+        "99": {"caption": "Other"}
+    }
+  },
+  "type_uid": {
+    "enum": {
+      "600700": { "caption": "Scan Activity: Unknown" },
+      "600701": { "caption": "Scan Activity: Started" },
+      "600702": { "caption": "Scan Activity: Completed" },
+      "600703": { "caption": "Scan Activity: Cancelled" },
+      "600704": { "caption": "Scan Activity: Duration Violation" },
+      "600705": { "caption": "Scan Activity: Pause Violation" },
+      "600706": { "caption": "Scan Activity: Error" },
+      "600707": { "caption": "Scan Activity: Paused" },
+      "600708": { "caption": "Scan Activity: Resumed" },
+      "600709": { "caption": "Scan Activity: Restarted" },
+      "600710": { "caption": "Scan Activity: Delayed" },
+      "600799": { "caption": "Scan Activity: Other" }
+    }
+  }
+}
