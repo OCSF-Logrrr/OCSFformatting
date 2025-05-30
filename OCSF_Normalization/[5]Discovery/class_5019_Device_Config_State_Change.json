@@ -1,0 +1,521 @@
+{
+    "activity_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Log"
+            },
+            "2": {
+                "caption": "Collect"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "category_uid": 5,
+    "class_uid": 5019,
+    "device": {
+        "hostname": "Hostname",
+        "instance_uid": "String",
+        "interface_name": "String",
+        "interface_uid": "String",
+        "type_id": {
+            "enum": {
+                "0": {
+                    "caption": "Unknown"
+                },
+                "1": {
+                    "caption": "Server"
+                },
+                "2": {
+                    "caption": "Desktop"
+                },
+                "3": {
+                    "caption": "Laptop"
+                },
+                "4": {
+                    "caption": "Tablet"
+                },
+                "5": {
+                    "caption": "Mobile"
+                },
+                "6": {
+                    "caption": "Virtual"
+                },
+                "7": {
+                    "caption": "IOT"
+                },
+                "8": {
+                    "caption": "Browser"
+                },
+                "9": {
+                    "caption": "Firewall"
+                },
+                "10": {
+                    "caption": "Switch"
+                },
+                "11": {
+                    "caption": "Hub"
+                },
+                "12": {
+                    "caption": "Router"
+                },
+                "13": {
+                    "caption": "IDS"
+                },
+                "14": {
+                    "caption": "IPS"
+                },
+                "15": {
+                    "caption": "Load Balancer"
+                },
+                "99": {
+                    "caption": "Other"
+                }
+            }
+        },
+        "uid": "String"
+    },
+    "message": "String",
+    "metadata": {
+        "product": {
+            "name": "String",
+            "uid": "String"
+        },
+        "version": "String"
+    },
+    "observables": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Hostname"
+            },
+            "2": {
+                "caption": "IP Address"
+            },
+            "3": {
+                "caption": "MAC Address"
+            },
+            "4": {
+                "caption": "User Name"
+            },
+            "5": {
+                "caption": "Email Address"
+            },
+            "6": {
+                "caption": "URL String"
+            },
+            "7": {
+                "caption": "File Name"
+            },
+            "8": {
+                "caption": "Hash"
+            },
+            "9": {
+                "caption": "Process Name"
+            },
+            "10": {
+                "caption": "Resource UID"
+            },
+            "11": {
+                "caption": "Port"
+            },
+            "12": {
+                "caption": "Subnet"
+            },
+            "13": {
+                "caption": "Command Line"
+            },
+            "14": {
+                "caption": "Country"
+            },
+            "15": {
+                "caption": "Process ID"
+            },
+            "16": {
+                "caption": "HTTP User-Agent"
+            },
+            "17": {
+                "caption": "CWE Object: uid"
+            },
+            "18": {
+                "caption": "CVE Object: uid"
+            },
+            "19": {
+                "caption": "User Credential ID"
+            },
+            "20": {
+                "caption": "Endpoint"
+            },
+            "21": {
+                "caption": "User"
+            },
+            "22": {
+                "caption": "Email"
+            },
+            "23": {
+                "caption": "Uniform Resource Locator"
+            },
+            "24": {
+                "caption": "File"
+            },
+            "25": {
+                "caption": "Process"
+            },
+            "26": {
+                "caption": "Geo Location"
+            },
+            "27": {
+                "caption": "Container"
+            },
+            "28": {
+                "caption": "Registry Key"
+            },
+            "29": {
+                "caption": "Registry Value"
+            },
+            "30": {
+                "caption": "Fingerprint"
+            },
+            "31": {
+                "caption": "User Object: uid"
+            },
+            "32": {
+                "caption": "Group Object: name"
+            },
+            "33": {
+                "caption": "Group Object: uid"
+            },
+            "34": {
+                "caption": "Account Object: name"
+            },
+            "35": {
+                "caption": "Account Object: uid"
+            },
+            "36": {
+                "caption": "Script Content"
+            },
+            "37": {
+                "caption": "Serial Number"
+            },
+            "38": {
+                "caption": "Resource Details Object: name"
+            },
+            "39": {
+                "caption": "Process Entity Object: uid"
+            },
+            "40": {
+                "caption": "Email Object: subject"
+            },
+            "41": {
+                "caption": "Email Object: uid"
+            },
+            "42": {
+                "caption": "Message UID"
+            },
+            "43": {
+                "caption": "Registry Value Object: name"
+            },
+            "44": {
+                "caption": "Advisory Object: uid"
+            },
+            "45": {
+                "caption": "File Path"
+            },
+            "46": {
+                "caption": "Registry Key Path"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "prev_security_level": "String",
+    "prev_security_level_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Secure"
+            },
+            "2": {
+                "caption": "At Risk"
+            },
+            "3": {
+                "caption": "Compromised"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "prev_security_status": {
+        "state_id": {
+            "enum": {
+                "0": {
+                    "caption": "Unknown"
+                },
+                "1": {
+                    "caption": "Missing or outdated content"
+                },
+                "2": {
+                    "caption": "Policy mismatch"
+                },
+                "3": {
+                    "caption": "In network quarantine"
+                },
+                "4": {
+                    "caption": "Protection off"
+                },
+                "5": {
+                    "caption": "Protection malfunction"
+                },
+                "6": {
+                    "caption": "Protection not licensed"
+                },
+                "7": {
+                    "caption": "Unremediated threat"
+                },
+                "8": {
+                    "caption": "Suspicious reputation"
+                },
+                "9": {
+                    "caption": "Reboot pending"
+                },
+                "10": {
+                    "caption": "Content is locked"
+                },
+                "11": {
+                    "caption": "Not installed"
+                },
+                "12": {
+                    "caption": "Writable system partition"
+                },
+                "13": {
+                    "caption": "SafetyNet failure"
+                },
+                "14": {
+                    "caption": "Failed boot verify"
+                },
+                "15": {
+                    "caption": "Modified execution environment"
+                },
+                "16": {
+                    "caption": "SELinux disabled"
+                },
+                "17": {
+                    "caption": "Elevated privilege shell"
+                },
+                "18": {
+                    "caption": "iOS file system altered"
+                },
+                "19": {
+                    "caption": "Open remote access"
+                },
+                "20": {
+                    "caption": "OTA updates disabled"
+                },
+                "21": {
+                    "caption": "Rooted"
+                },
+                "22": {
+                    "caption": "Android partition modified"
+                },
+                "23": {
+                    "caption": "Compliance failure"
+                },
+                "99": {
+                    "caption": "Other"
+                }
+            }
+        }
+    },
+    "security_level": "String",
+    "security_level_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Secure"
+            },
+            "2": {
+                "caption": "At Risk"
+            },
+            "3": {
+                "caption": "Compromised"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "security_states": {
+        "state_id": {
+            "enum": {
+                "0": {
+                    "caption": "Unknown"
+                },
+                "1": {
+                    "caption": "Missing or outdated content"
+                },
+                "2": {
+                    "caption": "Policy mismatch"
+                },
+                "3": {
+                    "caption": "In network quarantine"
+                },
+                "4": {
+                    "caption": "Protection off"
+                },
+                "5": {
+                    "caption": "Protection malfunction"
+                },
+                "6": {
+                    "caption": "Protection not licensed"
+                },
+                "7": {
+                    "caption": "Unremediated threat"
+                },
+                "8": {
+                    "caption": "Suspicious reputation"
+                },
+                "9": {
+                    "caption": "Reboot pending"
+                },
+                "10": {
+                    "caption": "Content is locked"
+                },
+                "11": {
+                    "caption": "Not installed"
+                },
+                "12": {
+                    "caption": "Writable system partition"
+                },
+                "13": {
+                    "caption": "SafetyNet failure"
+                },
+                "14": {
+                    "caption": "Failed boot verify"
+                },
+                "15": {
+                    "caption": "Modified execution environment"
+                },
+                "16": {
+                    "caption": "SELinux disabled"
+                },
+                "17": {
+                    "caption": "Elevated privilege shell"
+                },
+                "18": {
+                    "caption": "iOS file system altered"
+                },
+                "19": {
+                    "caption": "Open remote access"
+                },
+                "20": {
+                    "caption": "OTA updates disabled"
+                },
+                "21": {
+                    "caption": "Rooted"
+                },
+                "22": {
+                    "caption": "Android partition modified"
+                },
+                "23": {
+                    "caption": "Compliance failure"
+                },
+                "99": {
+                    "caption": "Other"
+                }
+            }
+        }
+    },
+    "severity_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Informational"
+            },
+            "2": {
+                "caption": "Low"
+            },
+            "3": {
+                "caption": "Medium"
+            },
+            "4": {
+                "caption": "High"
+            },
+            "5": {
+                "caption": "Critical"
+            },
+            "6": {
+                "caption": "Fatal"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "state_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Disabled"
+            },
+            "2": {
+                "caption": "Enabled"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "status": "String",
+    "status_code": "String",
+    "status_detail": "String",
+    "status_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Success"
+            },
+            "2": {
+                "caption": "Failure"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "time": "Timestamp",
+    "timezone_offset": "Integer",
+    "type_uid": {
+        "enum": {
+            "501900": {
+                "caption": "Device Config State Change: Unknown"
+            },
+            "501901": {
+                "caption": "Device Config State Change: Log"
+            },
+            "501902": {
+                "caption": "Device Config State Change: Collect"
+            },
+            "501999": {
+                "caption": "Device Config State Change: Other"
+            }
+        }
+    }
+}
