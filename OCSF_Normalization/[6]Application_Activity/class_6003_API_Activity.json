@@ -1,0 +1,432 @@
+{
+  "activity_id": {
+        "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Create" },
+        "2": { "caption": "Read" },
+        "3": { "caption": "Update" },
+        "4": { "caption": "Delete" },
+        "99": { "caption": "Other" }
+    }
+  },
+  "actor": {
+    "process": {
+      "cmd_line": "String",
+      "cpid": "UUID",
+      "created_time": "Timestamp",
+      "file": {
+        "ext": "String",
+        "hashes": [
+          {
+            "algorithm_id": {
+              "enum": {
+                "0": { "caption": "Unknown" },
+                "1": { "caption": "MD5" },
+                "2": { "caption": "SHA-1" },
+                "3": { "caption": "SHA-256" },
+                "4": { "caption": "SHA-512" },
+                "5": { "caption": "CTPH" },
+                "6": { "caption": "TLSH" },
+                "7": { "caption": "quickXorHash" },
+                "99": { "caption": "Other" }
+              }
+            },
+            "value": "String"
+          }
+        ],
+        "name": "String",
+        "path": "String",
+        "type_id": {
+          "enum": {
+            "0": { "caption": "Unknown" },
+            "1": { "caption": "Regular File" },
+            "2": { "caption": "Folder" },
+            "3": { "caption": "Character Device" },
+            "4": { "caption": "Block Device" },
+            "5": { "caption": "Local Socket" },
+            "6": { "caption": "Named Pipe" },
+            "7": { "caption": "Symbolic Link" },
+            "99": { "caption": "Other" }
+          }
+        }
+      },
+      "name": "String",
+      "parent_process": {
+        "cmd_line": "String",
+        "cpid": "UUID",
+        "created_time": "Timestamp",
+        "file": {
+          "ext": "String",
+          "hashes": [
+            {
+              "algorithm_id": {
+                "enum": {
+                  "0": { "caption": "Unknown" },
+                  "1": { "caption": "MD5" },
+                  "2": { "caption": "SHA-1" },
+                  "3": { "caption": "SHA-256" },
+                  "4": { "caption": "SHA-512" },
+                  "5": { "caption": "CTPH" },
+                  "6": { "caption": "TLSH" },
+                  "7": { "caption": "quickXorHash" },
+                  "99": { "caption": "Other" }
+                }
+              },
+              "value": "String"
+            }
+          ],
+          "name": "String",
+          "path": "String",
+          "type_id": {
+            "enum": {
+              "0": { "caption": "Unknown" },
+              "1": { "caption": "Regular File" },
+              "2": { "caption": "Folder" },
+              "3": { "caption": "Character Device" },
+              "4": { "caption": "Block Device" },
+              "5": { "caption": "Local Socket" },
+              "6": { "caption": "Named Pipe" },
+              "7": { "caption": "Symbolic Link" },
+              "99": { "caption": "Other" }
+            }
+          }
+        }
+      },
+      "pid": "PID",
+      "uid": "String",
+      "user": {
+        "has_mfa": "Boolean",
+        "name": "String",
+        "type_id": {
+            "enum": {
+                "0": {"caption": "Unknown"},
+                "1": {"caption": "User"},
+                "2": {"caption": "Admin"},
+                "3": {"caption": "System"},
+                "99": {"caption": "Other"}
+            }
+        },
+        "uid": "String"
+      }
+    }
+  },
+  "api": {
+    "operation": "String",
+    "request": {
+      "uid": "String"
+    },
+    "response": {
+      "code": "Integer",
+      "error": "String",
+      "error_message": "String",
+      "message": "String"
+    }
+  },  
+  "category_uid": "Application Activity",
+  "class_uid": 6003,
+  "dst_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "owner": {
+        "has_mfa": "Boolean",
+        "name": "String",
+        "type_id": {
+            "enum": {
+                "0": {"caption": "Unknown"},
+                "1": {"caption": "User"},
+                "2": {"caption": "Admin"},
+                "3": {"caption": "System"},
+                "99": {"caption": "Other"}
+                }
+            },
+            "uid": "String"
+    },
+    "port": "Port",
+    "svc_name": "String",
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Server" },
+        "2": { "caption": "Desktop" },
+        "3": { "caption": "Laptop" },
+        "4": { "caption": "Tablet" },
+        "5": { "caption": "Mobile" },
+        "6": { "caption": "Virtual" },
+        "7": { "caption": "IOT" },
+        "8": { "caption": "Browser" },
+        "9": { "caption": "Firewall" },
+        "10": { "caption": "Switch" },
+        "11": { "caption": "Hub" },
+        "12": { "caption": "Router" },
+        "13": { "caption": "IDS" },
+        "14": { "caption": "IPS" },
+        "15": { "caption": "Load Balancer" },
+        "99": { "caption": "Other" }
+      }
+    },
+    "uid": "String"
+  },
+  "http_request": {
+    "http_headers": {
+        "name": "String",
+        "value": "String"
+    },
+    "http_method": {
+      "CONNECT": {"description": "The CONNECT method establishes a tunnel to the server identified by the target resource."},
+      "DELETE": {"description": "The DELETE method deletes the specified resource."},
+      "GET": {"description": "The GET method requests a representation of the specified resource. Requests using GET should only retrieve data."},
+      "HEAD": {"description": "The HEAD method asks for a response identical to a GET request, but without the response body."},
+      "OPTIONS": {"description": "The OPTIONS method describes the communication options for the target resource."},
+      "POST": {"description": "The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server."},
+      "PUT": {"description": "The PUT method replaces all current representations of the target resource with the request payload."},
+      "TRACE": {"description": "The TRACE method performs a message loop-back test along the path to the target resource."}
+    },
+    "url":  {
+        "category_ids": {
+            "enum": {
+                "0": { "caption": "Unknown" },
+                "1": { "caption": "Adult/Mature Content" },
+                "3": { "caption": "Pornography" },
+                "4": { "caption": "Sex Education" },
+                "5": { "caption": "Intimate Apparel/Swimsuit" },
+                "6": { "caption": "Nudity" },
+                "7": { "caption": "Extreme" },
+                "9": { "caption": "Scam/Questionable/Illegal" },
+                "11": { "caption": "Gambling" },
+                "14": { "caption": "Violence/Hate/Racism" },
+                "15": { "caption": "Weapons" },
+                "16": { "caption": "Abortion" },
+                "17": { "caption": "Hacking" },
+                "18": { "caption": "Phishing" },
+                "20": { "caption": "Entertainment" },
+                "21": { "caption": "Business/Economy" },
+                "22": { "caption": "Alternative Spirituality/Belief" },
+                "23": { "caption": "Alcohol" },
+                "24": { "caption": "Tobacco" },
+                "25": { "caption": "Controlled Substances" },
+                "26": { "caption": "Child Pornography" },
+                "27": { "caption": "Education" },
+                "29": { "caption": "Charitable Organizations" },
+                "30": { "caption": "Art/Culture" },
+                "31": { "caption": "Financial Services" },
+                "32": { "caption": "Brokerage/Trading" },
+                "33": { "caption": "Games" },
+                "34": { "caption": "Government/Legal" },
+                "35": { "caption": "Military" },
+                "36": { "caption": "Political/Social Advocacy" },
+                "37": { "caption": "Health" },
+                "38": { "caption": "Technology/Internet" },
+                "40": { "caption": "Search Engines/Portals" },
+                "43": { "caption": "Malicious Sources/Malnets" },
+                "44": { "caption": "Malicious Outbound Data/Botnets" },
+                "45": { "caption": "Job Search/Careers" },
+                "46": { "caption": "News/Media" },
+                "47": { "caption": "Personals/Dating" },
+                "49": { "caption": "Reference" },
+                "50": { "caption": "Mixed Content/Potentially Adult" },
+                "51": { "caption": "Chat (IM)/SMS" },
+                "52": { "caption": "Email" },
+                "53": { "caption": "Newsgroups/Forums" },
+                "54": { "caption": "Religion" },
+                "55": { "caption": "Social Networking" },
+                "56": { "caption": "File Storage/Sharing" },
+                "57": { "caption": "Remote Access Tools" },
+                "58": { "caption": "Shopping" },
+                "59": { "caption": "Auctions" },
+                "60": { "caption": "Real Estate" },
+                "61": { "caption": "Society/Daily Living" },
+                "63": { "caption": "Personal Sites" },
+                "64": { "caption": "Restaurants/Dining/Food" },
+                "65": { "caption": "Sports/Recreation" },
+                "66": { "caption": "Travel" },
+                "67": { "caption": "Vehicles" },
+                "68": { "caption": "Humor/Jokes" },
+                "71": { "caption": "Software Downloads" },
+                "83": { "caption": "Peer-to-Peer (P2P)" },
+                "84": { "caption": "Audio/Video Clips" },
+                "85": { "caption": "Office/Business Applications" },
+                "86": { "caption": "Proxy Avoidance" },
+                "87": { "caption": "For Kids" },
+                "88": { "caption": "Web Ads/Analytics" },
+                "89": { "caption": "Web Hosting" },
+                "90": { "caption": "Uncategorized" },
+                "92": { "caption": "Suspicious" },
+                "93": { "caption": "Sexual Expression" },
+                "95": { "caption": "Translation" },
+                "96": { "caption": "Non-Viewable/Infrastructure" },
+                "97": { "caption": "Content Servers" },
+                "98": { "caption": "Placeholders" },
+                "99": { "caption": "Other" },
+                "101": { "caption": "Spam" },
+                "102": { "caption": "Potentially Unwanted Software" },
+                "103": { "caption": "Dynamic DNS Host" },
+                "106": { "caption": "E-Card/Invitations" },
+                "107": { "caption": "Informational" },
+                "108": { "caption": "Computer/Information Security" },
+                "109": { "caption": "Internet Connected Devices" },
+                "110": { "caption": "Internet Telephony" },
+                "111": { "caption": "Online Meetings" },
+                "112": { "caption": "Media Sharing" },
+                "113": { "caption": "Radio/Audio Streams" },
+                "114": { "caption": "TV/Video Streams" },
+                "118": { "caption": "Piracy/Copyright Concerns" },
+                "121": { "caption": "Marijuana" }
+            }
+        },
+        "hostname": "Hostname",
+        "path": "String",
+        "port": "Port",
+        "query_string": "String",
+        "scheme": "String",
+        "url_string": "URL String"
+    },
+    "user_agent": "String",
+    "version": "String"
+  },
+  "message": "String",
+  "metadata": {
+    "log_name": "String",
+    "log_provider": "String",
+    "original_time": "String",
+    "product": {
+      "name": "String",
+      "uid": "String",
+      "vendor_name": "String",
+      "version": "String"
+    },
+    "tenant_uid": "String",
+    "version": "String"
+  },
+  "observables": {
+    "name": "String",
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Hostname" },
+        "2": { "caption": "IP Address" },
+        "3": { "caption": "MAC Address" },
+        "4": { "caption": "User Name" },
+        "5": { "caption": "Email Address" },
+        "6": { "caption": "URL String" },
+        "7": { "caption": "File Name" },
+        "8": { "caption": "Hash" },
+        "9": { "caption": "Process Name" },
+        "10": { "caption": "Resource UID" },
+        "11": { "caption": "Port" },
+        "12": { "caption": "Subnet" },
+        "13": { "caption": "Command Line" },
+        "14": { "caption": "Country" },
+        "15": { "caption": "Process ID" },
+        "16": { "caption": "HTTP User-Agent" },
+        "17": { "caption": "CWE Object: uid" },
+        "18": { "caption": "CVE Object: uid" },
+        "19": { "caption": "User Credential ID" },
+        "20": { "caption": "Endpoint" },
+        "21": { "caption": "User" },
+        "22": { "caption": "Email" },
+        "23": { "caption": "Uniform Resource Locator" },
+        "24": { "caption": "File" },
+        "25": { "caption": "Process" },
+        "26": { "caption": "Geo Location" },
+        "27": { "caption": "Container" },
+        "28": { "caption": "Registry Key" },
+        "29": { "caption": "Registry Value" },
+        "30": { "caption": "Fingerprint" },
+        "31": { "caption": "User Object: uid" },
+        "32": { "caption": "Group Object: name" },
+        "33": { "caption": "Group Object: uid" },
+        "34": { "caption": "Account Object: name" },
+        "35": { "caption": "Account Object: uid" },
+        "36": { "caption": "Script Content" },
+        "37": { "caption": "Serial Number" },
+        "38": { "caption": "Resource Details Object: name" },
+        "39": { "caption": "Process Entity Object: uid" },
+        "40": { "caption": "Email Object: subject" },
+        "41": { "caption": "Email Object: uid" },
+        "42": { "caption": "Message UID" },
+        "43": { "caption": "Registry Value Object: name" },
+        "44": { "caption": "Advisory Object: uid" },
+        "45": { "caption": "File Path" },
+        "46": { "caption": "Registry Key Path" },
+        "99": { "caption": "Other" }
+      }
+    }
+  },
+  "resources": {
+    "hostname": "Hostname",
+    "ip":"IP Address",
+    "name": "String",
+    "uid": "String"
+  },
+  "severity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Informational" },
+      "2": { "caption": "Low" },
+      "3": { "caption": "Medium" },
+      "4": { "caption": "High" },
+      "5": { "caption": "Critical" },
+      "6": { "caption": "Fatal" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "src_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name":  "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "port": "Port",
+    "svc_name": "String",
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Server" },
+        "2": { "caption": "Desktop" },
+        "3": { "caption": "Laptop" },
+        "4": { "caption": "Tablet" },
+        "5": { "caption": "Mobile" },
+        "6": { "caption": "Virtual" },
+        "7": { "caption": "IOT" },
+        "8": { "caption": "Browser" },
+        "9": { "caption": "Firewall" },
+        "10": { "caption": "Switch" },
+        "11": { "caption": "Hub" },
+        "12": { "caption": "Router" },
+        "13": { "caption": "IDS" },
+        "14": { "caption": "IPS" },
+        "15": { "caption": "Load Balancer" },
+        "99": { "caption": "Other" }
+      }
+    },
+    "uid": "String"
+  },
+  "status": "String",
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Success" },
+      "2": { "caption": "Failure" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "540",
+  "type_uid": {
+    "enum": {
+      "600300": { "caption": "API Activity: Unknown" },
+      "600301": { "caption": "API Activity: Create" },
+      "600302": { "caption": "API Activity: Read" },
+      "600303": { "caption": "API Activity: Update" },
+      "600304": { "caption": "API Activity: Delete" },
+      "600399": { "caption": "API Activity: Other" }
+    }
+  }
+}
