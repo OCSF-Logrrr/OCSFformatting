@@ -1,0 +1,303 @@
+{
+    "activity_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Isolate"
+            },
+            "2": {
+                "caption": "Evict"
+            },
+            "3": {
+                "caption": "Restore"
+            },
+            "4": {
+                "caption": "Harden"
+            },
+            "5": {
+                "caption": "Detect"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "category_uid": 7,
+    "class_uid": 7004,
+    "command_uid": "String",
+    "connection_info": {
+        "diection_id": {
+            "enum": {
+                "0": {
+                    "caption": "Unknown"
+                },
+                "1": {
+                    "caption": "Inbound"
+                },
+                "2": {
+                    "caption": "Outbound"
+                },
+                "3": {
+                    "caption": "Lateral"
+                },
+                "99": {
+                    "caption": "Other"
+                }
+            }
+        }
+    },
+    "countermeasures": {
+        "d3f_tactic": {
+            "name": "String",
+            "uid": "String"
+        },
+        "d3f_technique": {
+            "name": "String",
+            "uid": "String"
+        }
+    },
+    "message": "String",
+    "metadata": {
+        "product": {
+            "name": "String",
+            "uid": "String"
+        },
+        "version": "String"
+    },
+    "observables": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Hostname"
+            },
+            "2": {
+                "caption": "IP Address"
+            },
+            "3": {
+                "caption": "MAC Address"
+            },
+            "4": {
+                "caption": "User Name"
+            },
+            "5": {
+                "caption": "Email Address"
+            },
+            "6": {
+                "caption": "URL String"
+            },
+            "7": {
+                "caption": "File Name"
+            },
+            "8": {
+                "caption": "Hash"
+            },
+            "9": {
+                "caption": "Process Name"
+            },
+            "10": {
+                "caption": "Resource UID"
+            },
+            "11": {
+                "caption": "Port"
+            },
+            "12": {
+                "caption": "Subnet"
+            },
+            "13": {
+                "caption": "Command Line"
+            },
+            "14": {
+                "caption": "Country"
+            },
+            "15": {
+                "caption": "Process ID"
+            },
+            "16": {
+                "caption": "HTTP User-Agent"
+            },
+            "17": {
+                "caption": "CWE Object: uid"
+            },
+            "18": {
+                "caption": "CVE Object: uid"
+            },
+            "19": {
+                "caption": "User Credential ID"
+            },
+            "20": {
+                "caption": "Endpoint"
+            },
+            "21": {
+                "caption": "User"
+            },
+            "22": {
+                "caption": "Email"
+            },
+            "23": {
+                "caption": "Uniform Resource Locator"
+            },
+            "24": {
+                "caption": "File"
+            },
+            "25": {
+                "caption": "Process"
+            },
+            "26": {
+                "caption": "Geo Location"
+            },
+            "27": {
+                "caption": "Container"
+            },
+            "28": {
+                "caption": "Registry Key"
+            },
+            "29": {
+                "caption": "Registry Value"
+            },
+            "30": {
+                "caption": "Fingerprint"
+            },
+            "31": {
+                "caption": "User Object: uid"
+            },
+            "32": {
+                "caption": "Group Object: name"
+            },
+            "33": {
+                "caption": "Group Object: uid"
+            },
+            "34": {
+                "caption": "Account Object: name"
+            },
+            "35": {
+                "caption": "Account Object: uid"
+            },
+            "36": {
+                "caption": "Script Content"
+            },
+            "37": {
+                "caption": "Serial Number"
+            },
+            "38": {
+                "caption": "Resource Details Object: name"
+            },
+            "39": {
+                "caption": "Process Entity Object: uid"
+            },
+            "40": {
+                "caption": "Email Object: subject"
+            },
+            "41": {
+                "caption": "Email Object: uid"
+            },
+            "42": {
+                "caption": "Message UID"
+            },
+            "43": {
+                "caption": "Registry Value Object: name"
+            },
+            "44": {
+                "caption": "Advisory Object: uid"
+            },
+            "45": {
+                "caption": "File Path"
+            },
+            "46": {
+                "caption": "Registry Key Path"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "severity_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Informational"
+            },
+            "2": {
+                "caption": "Low"
+            },
+            "3": {
+                "caption": "Medium"
+            },
+            "4": {
+                "caption": "High"
+            },
+            "5": {
+                "caption": "Critical"
+            },
+            "6": {
+                "caption": "Fatal"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "status": "String",
+    "status_code": "String",
+    "status_detail": "String",
+    "status_id": {
+        "enum": {
+            "0": {
+                "caption": "Unknown"
+            },
+            "1": {
+                "caption": "Success"
+            },
+            "2": {
+                "caption": "Failure"
+            },
+            "3": {
+                "caption": "Does Not Exist"
+            },
+            "4": {
+                "caption": "Partial"
+            },
+            "5": {
+                "caption": "Unsupported"
+            },
+            "6": {
+                "caption": "Error"
+            },
+            "99": {
+                "caption": "Other"
+            }
+        }
+    },
+    "time": "Timestamp",
+    "timezone_offset": "Integer",
+    "type_uid": {
+        "enum": {
+            "700400": {
+                "caption": "Network Remediation Activity: Unknown"
+            },
+            "700401": {
+                "caption": "Network Remediation Activity: Isolate"
+            },
+            "700402": {
+                "caption": "Network Remediation Activity: Evict"
+            },
+            "700403": {
+                "caption": "Network Remediation Activity: Restore"
+            },
+            "700404": {
+                "caption": "Network Remediation Activity: Harden"
+            },
+            "700405": {
+                "caption": "Network Remediation Activity: Detect"
+            },
+            "700499": {
+                "caption": "Network Remediation Activity: Other"
+            }
+        }
+    }
+}
