@@ -1,0 +1,166 @@
+{
+  "activity_id": {
+    "enum": {
+      "0": {"caption": "Unknown"},
+      "1": {"caption": "Create"},
+      "2": {"caption": "Read"},
+      "3": {"caption": "Update"},
+      "4": {"caption": "Delete"},
+      "5": {"caption": "Rename"},
+      "6": {"caption": "Set Attributes"},
+      "7": {"caption": "Set Security"},
+      "8": {"caption": "Get Attributes"},
+      "9": {"caption": "Get Security"},
+      "10": {"caption": "Encrypt"},
+      "11": {"caption": "Decrypt"},
+      "12": {"caption": "Mount"},
+      "13": {"caption": "Unmount"},
+      "14": {"caption": "Open"},
+      "99": {"caption": "Other"}
+    }
+  },
+  "actor": {
+    "process": {
+      "cpid": "UUID",
+      "pid": "Integer",
+      "uid": "String"
+    },
+    "user": {
+      "name": "String",
+      "uid": "String"
+    }
+  },
+  "category_uid": "Integer",
+  "class_uid": 1001,
+  "component": "String",
+  "create_mask": "String",
+  "device": {
+    "uid": "String"
+  },
+  "hostname": "String",
+  "instance_uid": "String",
+  "interface_name": "String",
+  "interface_uid": "String",
+  "file": {
+    "name": "String",
+    "type_id": {
+      "enum": {
+        "0": {"caption": "Unknown"},
+        "1": {"caption": "Regular File"},
+        "2": {"caption": "Folder"},
+        "3": {"caption": "Character Device"},
+        "4": {"caption": "Block Device"},
+        "5": {"caption": "Local Socket"},
+        "6": {"caption": "Named Pipe"},
+        "7": {"caption": "Symbolic Link"},
+        "99": {"caption": "Other"}
+      }
+    }
+  },
+  "message": "String",
+  "metadata": {
+    "any_field": "String"
+  },
+  "product": {
+    "name": "String",
+    "uid": "String",
+    "version": "String"
+  },
+  "observables": {
+    "enum": {
+      "0": {"caption": "Unknown"},
+      "1": {"caption": "Hostname"},
+      "2": {"caption": "IP Address"},
+      "3": {"caption": "MAC Address"},
+      "4": {"caption": "User Name"},
+      "5": {"caption": "Email Address"},
+      "6": {"caption": "URL String"},
+      "7": {"caption": "File Name"},
+      "8": {"caption": "Hash"},
+      "9": {"caption": "Process Name"},
+      "10": {"caption": "Resource UID"},
+      "11": {"caption": "Port"},
+      "12": {"caption": "Subnet"},
+      "13": {"caption": "Command Line"},
+      "14": {"caption": "Country"},
+      "15": {"caption": "Process ID"},
+      "16": {"caption": "HTTP User-Agent"},
+      "17": {"caption": "CWE Object: uid"},
+      "18": {"caption": "CVE Object: uid"},
+      "19": {"caption": "User Credential ID"},
+      "20": {"caption": "Endpoint"},
+      "21": {"caption": "User"},
+      "22": {"caption": "Email"},
+      "23": {"caption": "Uniform Resource Locator"},
+      "24": {"caption": "File"},
+      "25": {"caption": "Process"},
+      "26": {"caption": "Geo Location"},
+      "27": {"caption": "Container"},
+      "28": {"caption": "Registry Key"},
+      "29": {"caption": "Registry Value"},
+      "30": {"caption": "Fingerprint"},
+      "31": {"caption": "User Object: uid"},
+      "32": {"caption": "Group Object: name"},
+      "33": {"caption": "Group Object: uid"},
+      "34": {"caption": "Account Object: name"},
+      "35": {"caption": "Account Object: uid"},
+      "36": {"caption": "Script Content"},
+      "37": {"caption": "Serial Number"},
+      "38": {"caption": "Resource Details Object: name"},
+      "39": {"caption": "Process Entity Object: uid"},
+      "40": {"caption": "Email Object: subject"},
+      "41": {"caption": "Email Object: uid"},
+      "42": {"caption": "Message UID"},
+      "43": {"caption": "Registry Value Object: name"},
+      "44": {"caption": "Advisory Object: uid"},
+      "45": {"caption": "File Path"},
+      "46": {"caption": "Registry Key Path"},
+      "99": {"caption": "Other"}
+    }
+  },
+  "severity_id": {
+    "enum": {
+      "0": {"caption": "Unknown"},
+      "1": {"caption": "Information"},
+      "2": {"caption": "Low"},
+      "3": {"caption": "Medium"},
+      "4": {"caption": "High"},
+      "5": {"caption": "Critical"},
+      "6": {"caption": "Fatal"},
+      "99": {"caption": "Other"}
+    }
+  },
+  "status": "String",
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": {"caption": "Unknown"},
+      "1": {"caption": "Success"},
+      "2": {"caption": "Failure"},
+      "99": {"caption": "Other"}
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "Integer",
+  "type_uid": {
+    "enum": {
+      "100100": {"caption": "File System Activity: Unknown"},
+      "100101": {"caption": "File System Activity: Create"},
+      "100102": {"caption": "File System Activity: Read"},
+      "100103": {"caption": "File System Activity: Update"},
+      "100104": {"caption": "File System Activity: Delete"},
+      "100105": {"caption": "File System Activity: Rename"},
+      "100106": {"caption": "File System Activity: Set Attributes"},
+      "100107": {"caption": "File System Activity: Set Security"},
+      "100108": {"caption": "File System Activity: Get Attributes"},
+      "100109": {"caption": "File System Activity: Get Security"},
+      "100110": {"caption": "File System Activity: Encrypt"},
+      "100111": {"caption": "File System Activity: Decrypt"},
+      "100112": {"caption": "File System Activity: Mount"},
+      "100113": {"caption": "File System Activity: Unmount"},
+      "100114": {"caption": "File System Activity: Open"},
+      "100199": {"caption": "File System Activity: Other"}
+    }
+  }
+}

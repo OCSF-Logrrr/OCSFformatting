@@ -1,0 +1,251 @@
+{
+  "activity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Create" },
+      "2": { "captopn": "Read" },
+      "3": { "caption": "Update" },
+      "4": { "caption": "Delete" },
+      "5": { "caption": "Move" },
+      "6": { "caption": "Enroll" },
+      "7": { "caption": "Unenroll" },
+      "8": { "caption": "Enable" },
+      "9": { "caption": "Disable" },
+      "10": { "caption": "Activate" },
+      "11": { "caption": "Deativate" },
+      "12": { "caption": "Suspend" },
+      "13": { "caption": "Resume" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "actor": {
+    "process": {
+      "cpid": "UUID",
+      "pid": "Integer",
+      "uid": "String"
+    },
+    "user": {
+        "name": "String",
+        "uid": "String"
+    }
+  },
+  "category_uid": 3,
+  "class_uid": 3004,
+  "comment": "String",
+  "entity": {
+    "device": {
+      "hostname": "Hostname",
+      "instance_uid": "String",
+      "interface_name": "String",
+      "interface_uid": "String",
+      "type_id": {
+        "enum": {
+          "0": { "caption": "Unknown" },
+          "1": { "caption": "Server" },
+          "2": { "caption": "Desktop" },
+          "3": { "caption": "Laptop" },
+          "4": { "caption": "Tablet" },
+          "5": { "caption": "Mobile" },
+          "6": { "caption": "Virtual" },
+          "7": { "caption": "IOT" },
+          "8": { "caption": "Browser" },
+          "9": { "caption": "Firewall" },
+          "10": { "caption": "Switch" },
+          "11": { "caption": "Hub" },
+          "12": { "caption": "Router" },
+          "13": { "caption": "IDS" },
+          "14": { "caption": "IPS" },
+          "15": { "caption": "Load Balancer" },
+          "99": { "caption": "Unknown" }
+        }
+      },
+      "uid": "String"
+    },
+    "group": {
+      "name": "String",
+      "uid": "String"
+    },
+    "name": "String",
+    "org": {
+      "name": "String",
+      "uid": "String"
+    },
+    "policy": {
+      "name": "String",
+      "uid": "String"
+    },
+    "uid": "String",
+    "user": {
+      "name": "String",
+      "uid": "String"
+    }
+  },
+  "entity_result": {
+    "device": {
+      "hostname": "Hostname",
+      "instance_uid": "String",
+      "interface_name": "String",
+      "interface_uid": "String",
+      "type_id": {
+        "enum": {
+          "0": { "caption": "Unknown" },
+          "1": { "caption": "Server" },
+          "2": { "caption": "Desktop" },
+          "3": { "caption": "Laptop" },
+          "4": { "caption": "Tablet" },
+          "5": { "caption": "Mobile" },
+          "6": { "caption": "Virtual" },
+          "7": { "caption": "IOT" },
+          "8": { "caption": "Browser" },
+          "9": { "caption": "Firewall" },
+          "10": { "caption": "Switch" },
+          "11": { "caption": "Hub" },
+          "12": { "caption": "Router" },
+          "13": { "caption": "IDS" },
+          "14": { "caption": "IPS" },
+          "15": { "caption": "Load Balancer" },
+          "99": { "caption": "Unknown" }
+        }
+      },
+      "uid": "String"
+    },
+    "group": {
+      "name": "String",
+      "uid": "String"
+    },
+    "name": "String",
+    "org": {
+      "name": "String",
+      "uid": "String"
+    },
+    "policy": {
+      "name": "String",
+      "uid": "String"
+    },
+    "uid": "String",
+    "user": {
+      "name": "String",
+      "uid": "String"
+    }
+  },
+  "message": "String",
+  "metadata": {
+    "product": {
+      "name": "String",
+      "uid": "String"
+    },
+    "version": "1.5"
+  },
+  "observables": {
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Hostname" },
+        "2": { "caption": "IP Address" },
+        "3": { "caption": "MAC Address" },
+        "4": { "caption": "User Name" },
+        "5": { "caption": "Email Address" },
+        "6": { "caption": "URL String" },
+        "7": { "caption": "File Name" },
+        "8": { "caption": "Hash" },
+        "9": { "caption": "Process Name" },
+        "10": { "caption": "Resource UID" },
+        "11": { "caption": "Port" },
+        "12": { "caption": "Subnet" },
+        "13": { "caption": "Command Line" },
+        "14": { "caption": "Country" },
+        "15": { "caption": "Process ID" },
+        "16": { "caption": "HTTP User-Agent" },
+        "17": { "caption": "CWE Object: uid" },
+        "18": { "caption": "CVE Object: uid" },
+        "19": { "caption": "User Credential ID" },
+        "20": { "caption": "Endpoint" },
+        "21": { "caption": "User" },
+        "22": { "caption": "Email" },
+        "23": { "caption": "Uniform Resource Locator" },
+        "24": { "caption": "File" },
+        "25": { "caption": "Process" },
+        "26": { "caption": "Geo Location" },
+        "27": { "caption": "Container" },
+        "28": { "caption": "Registry Key" },
+        "29": { "caption": "Registry Value" },
+        "30": { "caption": "Fingerprint" },
+        "31": { "caption": "User Object: uid" },
+        "32": { "caption": "Group Object: name" },
+        "33": { "caption": "Group Object: uid" },
+        "34": { "caption": "Account Object: name" },
+        "35": { "caption": "Account Object: uid" },
+        "36": { "caption": "Script Content" },
+        "37": { "caption": "Serial Number" },
+        "38": { "caption": "Resource Details Object: name" },
+        "39": { "caption": "Process Entity Object: uid" },
+        "40": { "caption": "Email Object: subject" },
+        "41": { "caption": "Email Object: uid" },
+        "42": { "caption": "Message UID" },
+        "43": { "caption": "Registry Value Object: name" },
+        "44": { "caption": "Advisory Object: uid" },
+        "45": { "caption": "File Path" },
+        "46": { "caption": "Registry Key Path" },
+        "99": { "caption": "Other" }
+      }
+    }
+  },
+  "severity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Informational" },
+      "2": { "caption": "Low" },
+      "3": { "caption": "Medium" },
+      "4": { "caption": "High" },
+      "5": { "caption": "Critical" },
+      "6": { "caption": "Fatal" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "src_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "svc_name": "String",
+    "uid": "String"
+  },
+  "status": {
+    "Success": "LOGOFF_USER_INITIATED, LOGOFF_OTHER",
+    "Failure": "USER_DOES_NOT_EXIST, INVALID_CREDENTIALS, ACCOUNT_DISABLED, ACCOUNT_LOCKED_OUT, PASSWORD_EXPIRED"
+  },
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Success" },
+      "2": { "caption": "Failure" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "Integer",
+  "type_uid": {
+    "enum": {
+      "300400": { "caption": "Entity Management: Unknown" },
+      "300401": { "caption": "Entity Management: Create" },
+      "300402": { "caption": "Entity Management: Read" },
+      "300403": { "caption": "Entity Management: Update" },
+      "300404": { "caption": "Entity Management: Delete" },
+      "300405": { "caption": "Entity Management: Move" },
+      "300406": { "caption": "Entity Management: Enroll" },
+      "300407": { "caption": "Entity Management: Unenroll" },
+      "300408": { "caption": "Entity Management: Enable" },
+      "300409": { "caption": "Entity Management: Disable" },
+      "300410": { "caption": "Entity Management: Activate" },
+      "300411": { "caption": "Entity Management: Deactivate" },
+      "300412": { "caption": "Entity Management: Suspend" },
+      "300413": { "caption": "Entity Management: Resume" },
+      "300499": { "caption": "Entity Management: Other" }
+    }
+  }
+}
+  

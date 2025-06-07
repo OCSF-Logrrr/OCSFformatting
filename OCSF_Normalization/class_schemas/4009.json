@@ -1,0 +1,165 @@
+{
+  "activity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Send" },
+      "2": { "captopn": "Receive" },
+      "3": { "caption": "Scan" },
+      "4": { "caption": "Trace" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "category_uid": 4,
+  "class_uid": 4009,
+  "command": "String",
+  "direction_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Inbound" },
+      "2": { "caption": "Outbound" },
+      "3": { "caption": "Lateral" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "dst_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "port": "Port",
+    "svc_name": "String",
+    "uid": "String"
+  },
+  "email": {
+    "from": "Email Address",
+    "message_uid": "String",
+    "subject": "String",
+    "to": "Email Address Array",
+    "uid": "String"
+  },
+  "email_auth": {
+    "dkim": "String",
+    "dkim_domain": "String",
+    "dkim_signature": "String",
+    "dmarc": "String",
+    "dmarc_override": "String",
+    "dmarc_policy": "String",
+    "spf": "String"
+  },
+  "message": "String",
+  "message_trace_uid": "String",
+  "metadata": {
+    "product": {
+      "name": "String",
+      "uid": "String"
+    },
+    "version": "1.5"
+  },
+  "observables": {
+    "type_id": {
+      "enum": {
+        "0": { "caption": "Unknown" },
+        "1": { "caption": "Hostname" },
+        "2": { "caption": "IP Address" },
+        "3": { "caption": "MAC Address" },
+        "4": { "caption": "User Name" },
+        "5": { "caption": "Email Address" },
+        "6": { "caption": "URL String" },
+        "7": { "caption": "File Name" },
+        "8": { "caption": "Hash" },
+        "9": { "caption": "Process Name" },
+        "10": { "caption": "Resource UID" },
+        "11": { "caption": "Port" },
+        "12": { "caption": "Subnet" },
+        "13": { "caption": "Command Line" },
+        "14": { "caption": "Country" },
+        "15": { "caption": "Process ID" },
+        "16": { "caption": "HTTP User-Agent" },
+        "17": { "caption": "CWE Object: uid" },
+        "18": { "caption": "CVE Object: uid" },
+        "19": { "caption": "User Credential ID" },
+        "20": { "caption": "Endpoint" },
+        "21": { "caption": "User" },
+        "22": { "caption": "Email" },
+        "23": { "caption": "Uniform Resource Locator" },
+        "24": { "caption": "File" },
+        "25": { "caption": "Process" },
+        "26": { "caption": "Geo Location" },
+        "27": { "caption": "Container" },
+        "28": { "caption": "Registry Key" },
+        "29": { "caption": "Registry Value" },
+        "30": { "caption": "Fingerprint" },
+        "31": { "caption": "User Object: uid" },
+        "32": { "caption": "Group Object: name" },
+        "33": { "caption": "Group Object: uid" },
+        "34": { "caption": "Account Object: name" },
+        "35": { "caption": "Account Object: uid" },
+        "36": { "caption": "Script Content" },
+        "37": { "caption": "Serial Number" },
+        "38": { "caption": "Resource Details Object: name" },
+        "39": { "caption": "Process Entity Object: uid" },
+        "40": { "caption": "Email Object: subject" },
+        "41": { "caption": "Email Object: uid" },
+        "42": { "caption": "Message UID" },
+        "43": { "caption": "Registry Value Object: name" },
+        "44": { "caption": "Advisory Object: uid" },
+        "45": { "caption": "File Path" },
+        "46": { "caption": "Registry Key Path" },
+        "99": { "caption": "Other" }
+      }
+    }
+  },
+  "protocol_name": "String",
+  "severity_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Informational" },
+      "2": { "caption": "Low" },
+      "3": { "caption": "Medium" },
+      "4": { "caption": "High" },
+      "5": { "caption": "Critical" },
+      "6": { "caption": "Fatal" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "src_endpoint": {
+    "hostname": "Hostname",
+    "instance_uid": "String",
+    "interface_name": "String",
+    "interface_uid": "String",
+    "ip": "IP Address",
+    "name": "String",
+    "port": "Port",
+    "svc_name": "String",
+    "uid": "String"
+  },
+  "status": {
+    "Success": "LOGOFF_USER_INITIATED, LOGOFF_OTHER",
+    "Failure": "USER_DOES_NOT_EXIST, INVALID_CREDENTIALS, ACCOUNT_DISABLED, ACCOUNT_LOCKED_OUT, PASSWORD_EXPIRED"
+  },
+  "status_code": "String",
+  "status_detail": "String",
+  "status_id": {
+    "enum": {
+      "0": { "caption": "Unknown" },
+      "1": { "caption": "Success" },
+      "2": { "caption": "Failure" },
+      "99": { "caption": "Other" }
+    }
+  },
+  "time": "Timestamp",
+  "timezone_offset": "Integer",
+  "type_uid": {
+    "enum": {
+      "400900": { "caption": "Email Activity: Unknown" },
+      "400901": { "caption": "Email Activity: Send" },
+      "400902": { "caption": "Email Activity: Receive" },
+      "400903": { "caption": "Email Activity: Scan" },
+      "400904": { "caption": "Email Activity: Trace" },
+      "400999": { "caption": "Email Activity: Other" }
+    }
+  }
+}
+  
