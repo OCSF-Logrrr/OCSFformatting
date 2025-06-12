@@ -7,15 +7,19 @@ app 디렉토리 내부에 있는 파이썬 파일들을 각각 설명합니다.
 
 ## ⚙️ 구성 요소
 
-- `kafka_handler`  
-  kafka에서 원본 로그를 받아오는 역할.  
-  현재 작성된 건 초안으로, 이후에 함수를 분리하여 모듈화하거나 기능별로 세부 분류를 다시 진행할 예정.
+- `classifier.py`   
+  원본 로그를 분석하여 몇 번 클래스의 OCSF format인지 결정하는 기능
 
-- `schema_loader`  
-  input으로 클래스 번호가 들어오면 해당 번호에 맞는 JSON 파일을 class_schemas 폴더에서 가져오는 역할.
+- `kafka_handler.py`  
+  kafka에서 원본로그를 받아 오고, ocsf format으로 매핑된 로그를 kafka로 전달하는 기능
 
-- `main`  
-  정규화를 진행하는 메인 함수.  
-  작업 순서대로 파이썬 함수를 호출하여 정규화를 진행시킨다.
+- `llm.py`   
+  사용할 LLM 세팅
+
+- `mapping.py`   
+  LLM을 통해 실질적으로 OCSF 매핑을 수행
+
+- `schema_loader.py`   
+  사용할 class json 파일을 class_schemas/ 에서 가져오는 기능
 
 ---
