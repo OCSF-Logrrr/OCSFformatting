@@ -22,7 +22,7 @@ app 디렉토리 내부에 있는 파이썬 파일들을 각각 설명합니다.
 - `schema_loader.py`   
   사용할 class json 파일을 class_schemas/ 에서 가져오는 기능
 
-- `stream_loop.py`
+- `stream_loop.py`   
   kafka에 있는 raw logs를 지속적으로 읽어오는 기능
 
 ---
