@@ -15,8 +15,8 @@ project_root/
 │   ├── kafka_handler.py    # kafka handling
 │   ├── llm.py              # llm 사용 정보 관리
 │   ├── mapping.py          # 실질적인 필드 매핑 진행
-│   ├── stream_loop.py      # kafka에서 raw 로그를 지속적으로 읽어와 main에 전달 
-│   └── schema_loader.py    # class_schemas/ 내부에서 해당 클래스의 JSON 가져옴
+│   ├── schema_loader.py    # class_schemas/ 내부에서 해당 클래스의 JSON 가져옴
+│   └── stream_loop.py      # kafka에서 raw 로그를 지속적으로 읽어와 main에 전달 
 │
 ├── class_schemas/          # OCSF 클래스마다의 JSON 파일 저장되어 있음
 │   └── ...
