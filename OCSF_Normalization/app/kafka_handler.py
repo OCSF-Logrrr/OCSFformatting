@@ -1,39 +1,45 @@
-import os
+# app/kafka_handler.py
+
 import json
-import time
-import sys
-from kafka import KafkaConsumer
-from kafka.errors import NoBrokersAvailable
+import logging
+from confluent_kafka import Consumer, Producer, KafkaError
+from configs.kafka_config import (
+    INPUT_KAFKA_BOOTSTRAP_SERVERS,
+    INPUT_KAFKA_TOPIC,
+    INPUT_GROUP_ID,
+    OUTPUT_KAFKA_BOOTSTRAP_SERVERS,
+    OUTPUT_KAFKA_TOPIC
+)
 
-# 환경 변수
-brokers    = os.getenv("BROKERS", "localhost:9092").split(",")
-raw_topic  = os.getenv("RAW_TOPIC", "raw-logs")
+logging.basicConfig(level=logging.INFO)
 
-print(f"🔄 Single log fetcher starting: {raw_topic}", flush=True)
+# 입력용 Kafka 설정
+consumer_conf = {
+    'bootstrap.servers': INPUT_KAFKA_BOOTSTRAP_SERVERS,
+    'group.id': INPUT_GROUP_ID,
+    'auto.offset.reset': 'latest',
+    'enable.auto.commit': True
+}
+consumer = Consumer(consumer_conf)
+consumer.subscribe([INPUT_KAFKA_TOPIC])
 
-# 브로커 연결 대기
-while True:
+# 출력용 Kafka 설정
+producer = Producer({'bootstrap.servers': OUTPUT_KAFKA_BOOTSTRAP_SERVERS})
+
+def receive_log(timeout=1.0) -> str | None:
+    msg = consumer.poll(timeout)
+    if msg is None or msg.error():
+        return None
     try:
-        consumer = KafkaConsumer(
-            raw_topic,
-            bootstrap_servers=brokers,
-            group_id=None,  # 단일 fetcher라서 group_id 지정 안 함
-            auto_offset_reset='earliest',
-            enable_auto_commit=False,  # 커밋하지 않음 (한 번만 가져오기)
-            value_deserializer=lambda b: json.loads(b)
-        )
-        print("✅ Connected to Kafka brokers:", brokers, flush=True)
-        break
-    except NoBrokersAvailable:
-        print("⚠️  Kafka brokers not available, retrying in 5s...", file=sys.stderr, flush=True)
-        time.sleep(5)
+        return msg.value().decode("utf-8")
+    except Exception as e:
+        logging.warning(f"Kafka decode error: {e}")
+        return None
 
-# 메시지 한 개 가져오기
-try:
-    msg = next(consumer)
-    raw_log = msg.value
-    print("▶ [INFO] Fetched raw log:", raw_log, flush=True)
-except StopIteration:
-    print("⚠️  No messages available.", flush=True)
-finally:
-    consumer.close()
+def send_to_kafka(mapped_log: dict):
+    try:
+        producer.produce(OUTPUT_KAFKA_TOPIC, value=json.dumps(mapped_log))
+        producer.flush()
+        logging.info("Sent to Kafka (ocsf-logs)")
+    except Exception as e:
+        logging.error(f"Kafka send error: {e}")
