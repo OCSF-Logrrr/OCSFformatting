@@ -22,6 +22,6 @@ project_root/
 │   └── ...
 │
 └── configs/
-    └── ...
+    └── kafka_config.py
 
 ```
