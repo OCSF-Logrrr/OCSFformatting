@@ -1,14 +1,14 @@
 # main.py
 
-import json
 from app.stream_loop import stream_logs
-from app.classifier import predict_log
-from app.schema_loader import load_schema_json
+from app.classifier import predict_class
+from app.schema_loader import load_class_json
 from app.mapping import normalize_log
 from app.kafka_handler import send_to_kafka
 
 def main():
     for raw_log in stream_logs():
+        print(raw_log)
         try:
             log_data = json.loads(raw_log)
         except json.JSONDecodeError:
@@ -28,4 +28,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
