@@ -1,14 +1,17 @@
+# classifier.py
+
 from app.llm import call_llm
-from app.schema_loader import load_all_schemas
+from app.schema_loader import load_class_json
 
 def predict_class(log: str) -> str:
     """
+
     로그를 분석하여 가장 적절한 OCSF 클래스 이름을 예측합니다.
-    
+
     :param log: 원본 로그 문자열
     :return: 예측된 클래스 이름 (예: "threat_detection")
     """
-    schemas = load_all_schemas()
+    schemas = load_class_json(3001)
     class_names = "\n".join(schemas.keys())
 
     prompt = f"""Given the following log:
