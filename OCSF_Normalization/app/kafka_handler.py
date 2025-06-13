@@ -1,15 +1,9 @@
 # app/kafka_handler.py
 
+from confluent_kafka import Consumer, Producer, KafkaError
+from configs.kafka_config import INPUT_KAFKA_BOOTSTRAP_SERVERS, INPUT_KAFKA_TOPIC, INPUT_GROUP_ID, OUTPUT_KAFKA_BOOTSTRAP_SERVERS, OUTPUT_KAFKA_TOPIC
 import json
 import logging
-from confluent_kafka import Consumer, Producer, KafkaError
-from configs.kafka_config import (
-    INPUT_KAFKA_BOOTSTRAP_SERVERS,
-    INPUT_KAFKA_TOPIC,
-    INPUT_GROUP_ID,
-    OUTPUT_KAFKA_BOOTSTRAP_SERVERS,
-    OUTPUT_KAFKA_TOPIC
-)
 
 logging.basicConfig(level=logging.INFO)
 
