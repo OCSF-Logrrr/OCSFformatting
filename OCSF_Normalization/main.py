@@ -1,5 +1,6 @@
 # main.py
 
+import json
 from app.stream_loop import stream_logs
 from app.classifier import predict_class
 from app.schema_loader import load_class_json
