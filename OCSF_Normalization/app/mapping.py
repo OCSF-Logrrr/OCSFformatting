@@ -1,4 +1,4 @@
-def normalize_log(raw-log, class_num) -> dict:
+def normalize_log(raw_log, class_num) -> dict:
     """
     로그를 지정된 OCSF 클래스 스키마에 따라 정규화된 JSON으로 변환합니다.
 
@@ -10,7 +10,7 @@ def normalize_log(raw-log, class_num) -> dict:
 
     prompt = f"""Given this raw log:
 
-{raw-log}
+{raw_log}
 
 And the following OCSF JSON schema:
 {json.dumps(schema, indent=2)}
