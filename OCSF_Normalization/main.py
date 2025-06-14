@@ -9,7 +9,6 @@ from app.kafka_handler import send_to_kafka
 
 def main():
     for raw_log in stream_logs():
-        print(raw_log)  # delete!
         try:
             log_data = json.loads(raw_log)
         except json.JSONDecodeError:
