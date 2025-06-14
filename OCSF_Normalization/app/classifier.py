@@ -1,4 +1,4 @@
-# classifier.py
+# app/classifier.py
 
 import json
 import os
