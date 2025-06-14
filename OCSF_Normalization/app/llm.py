@@ -1,3 +1,5 @@
+# app/llm.py
+
 import openai
 
 # API 키 설정 (환경변수로 처리 권장)
