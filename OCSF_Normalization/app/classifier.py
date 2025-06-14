@@ -3,7 +3,7 @@
 import json
 import os
 
-KEYWORDS_JSON_PATH = os.path.join("../configs", "keyword.json")
+KEYWORDS_JSON_PATH = os.path.join("configs", "keyword.json")
 
 with open(KEYWORDS_JSON_PATH, "r", encoding="utf-8") as f:
     ALL_KEYWORDS = json.load(f)
