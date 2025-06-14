@@ -9,22 +9,19 @@ from app.kafka_handler import send_to_kafka
 
 def main():
     for raw_log in stream_logs():
+        print(raw_log)  # delete!
         try:
             log_data = json.loads(raw_log)
         except json.JSONDecodeError:
             continue
 
         class_id = predict_class(log_data)
-        if not class_id:
-            continue
-
-        schema = load_class_json(class_id)
-        if not schema:
-            continue
-
+        
         ocsf_log = normalize_log(log_data, class_id)
-        if mapped:
+        
+        if ocsf_log:
             send_to_kafka(ocsf_log)
+
 
 if __name__ == "__main__":
     main()
