@@ -20,7 +20,8 @@ project_root/
 │
 ├── configs/
 │   ├── __init__.py
-│   └── kafka_config.py
+│   ├── kafka_config.py
+│   └── keyword.json
 │
 ├── __init__.py
 ├── main.py
