@@ -1,27 +1,44 @@
 # classifier.py
 
-from app.llm import call_llm
-from app.schema_loader import load_class_json
+import json
+import os
 
-def predict_class(log: str) -> str:
-    """
+KEYWORDS_JSON_PATH = os.path.join("../configs", "keyword.json")
 
-    로그를 분석하여 가장 적절한 OCSF 클래스 이름을 예측합니다.
+with open(KEYWORDS_JSON_PATH, "r", encoding="utf-8") as f:
+    ALL_KEYWORDS = json.load(f)
 
-    :param log: 원본 로그 문자열
-    :return: 예측된 클래스 이름 (예: "threat_detection")
-    """
-    schemas = load_class_json(3001)
-    class_names = "\n".join(schemas.keys())
 
-    prompt = f"""Given the following log:
+def predict_class(log: dict | str) -> int | None:
+    if isinstance(log, dict):
+        log_text = json.dumps(log, ensure_ascii=False).lower()
+    else:
+        log_text = str(log).lower()
 
-{log}
+    match_scores = {}
 
-And the list of available OCSF class names:
-{class_names}
+    for class_uid, info in ALL_KEYWORDS.items():
+        keywords = info.get("keywords", [])
+        total_score = 0
 
-Which class best fits the log above? Just return the class name only.
-"""
+        for rank, keyword in enumerate(keywords, start=1):
+            idx = log_text.find(keyword.lower())
+            if idx >= 0:
+                # 위치 기반: 앞일수록 score 높음
+                position_weight = len(log_text) - idx
+                # 키워드 순서 기반: 리스트 앞쪽일수록 weight 높음
+                rank_weight = len(keywords) - rank + 1
+                total_score += position_weight * rank_weight
 
-    return call_llm(prompt)
+        if total_score > 0:
+            match_scores[class_uid] = total_score
+            
+    if match_scores:
+        # 점수가 같은 경우는 UID 작은 것 선택
+        max_score = max(match_scores.values())
+        candidates = [uid for uid, score in match_scores.items() if score == max_score]
+        chosen = min(int(uid) for uid in candidates)
+        return chosen
+
+    # None: 일치X (LLM 호출 등 추가 작업 필요)
+    return None
