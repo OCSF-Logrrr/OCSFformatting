@@ -22,7 +22,7 @@ def main():
         if not schema:
             continue
 
-        ocsf_log = normalize_log(log_data, schema)
+        ocsf_log = normalize_log(log_data, class_id)
         if mapped:
             send_to_kafka(ocsf_log)
 
