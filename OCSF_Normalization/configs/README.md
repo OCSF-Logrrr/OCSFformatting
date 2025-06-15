@@ -12,8 +12,6 @@ Kafka 브로커 설정과 OCSF 클래스 매핑을 위한 키워드 사전 등�
 | `kafka_config.py`   | Kafka 클러스터에 대한 연결 정보를 설정합니다. <br> - 원본 로그 수신용 토픽 (ex. `raw-logs`) <br> - OCSF 포맷으로 정규화된 로그 전송용 토픽 (ex. `ocsf-logs`) |
 | `keyword.json`      | OCSF 클래스(`class_uid`)와 관련된 키워드 목록을 정의합니다. <br> - `classifier.py`에서 로그 내용에 포함된 키워드와 비교하여 클래스 판단 시 사용됩니다. |
 | `__init__.py`       | Python 패키지 인식용 빈 파일입니다. |
-| `main.py`           | 테스트 또는 로컬 실행 시 사용될 수 있는 설정 진입점입니다. |
-| `README.md`         | 현재 파일로, 설정 파일에 대한 설명을 포함합니다. |
 
 ---
 
