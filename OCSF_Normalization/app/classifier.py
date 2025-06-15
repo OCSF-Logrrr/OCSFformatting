@@ -2,6 +2,7 @@
 
 import json
 import os
+import math
 
 KEYWORDS_JSON_PATH = os.path.join("configs", "keyword.json")
 
@@ -15,6 +16,9 @@ def predict_class(log: dict | str) -> int | None:
     else:
         log_text = str(log).lower()
 
+    if not log_text:
+        return None
+
     match_scores = {}
 
     for class_uid, info in ALL_KEYWORDS.items():
@@ -24,15 +28,15 @@ def predict_class(log: dict | str) -> int | None:
         for rank, keyword in enumerate(keywords, start=1):
             idx = log_text.find(keyword.lower())
             if idx >= 0:
-                # 위치 기반: 앞일수록 score 높음
-                position_weight = len(log_text) - idx
-                # 키워드 순서 기반: 리스트 앞쪽일수록 weight 높음
-                rank_weight = len(keywords) - rank + 1
+                position_ratio = idx / len(log_text)            # 0(앞쪽)~1(뒤쪽)
+                position_weight = math.exp(-2 * position_ratio) # λ=2 감쇠 계수
+                rank_weight = 1 / rank
+
                 total_score += position_weight * rank_weight
 
         if total_score > 0:
             match_scores[class_uid] = total_score
-            
+
     if match_scores:
         # 점수가 같은 경우는 UID 작은 것 선택
         max_score = max(match_scores.values())
