@@ -39,9 +39,10 @@ Kafka를 통해 전달된 원본 로그를 OCSF 포맷으로 정규화하고, El
 6. `kafka_handler.py`: Kafka로 최종 전송
 
 
-##🔄 로그 처리 흐름과 구성 요소 설명
+## 🔄 로그 처리 흐름과 구성 요소 설명
 Kafka로부터 수신한 원본 로그는 아래의 순서로 처리되어 OCSF 포맷으로 정규화된 후 다시 Kafka로 전송됩니다. 각 단계별 역할을 담당하는 파이썬 파일은 다음과 같습니다:
 
+단계	파일명	설명
 ① 수신	stream_loop.py	Kafka에서 원본 로그를 지속적으로 읽어오는 역할을 수행합니다.
 ② 분류	classifier.py	로그 내용을 분석하여 어떤 OCSF 클래스(class_uid)에 해당하는지 판단합니다.
 ③ 스키마 로딩	schema_loader.py	판별된 클래스에 해당하는 JSON 스키마를 class_schemas/ 디렉토리에서 로딩합니다.
