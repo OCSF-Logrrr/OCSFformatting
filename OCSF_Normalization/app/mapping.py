@@ -1,13 +1,11 @@
 # app/mapping.py
 
-def normalize_log(raw_log, class_uid) -> dict:
-    """
-    로그를 지정된 OCSF 클래스 스키마에 따라 정규화된 JSON으로 변환합니다.
+from app.llm import call_llm
+from app.schema_loader import load_class_json
+import re
+import json
 
-    :param log: 원본 로그 문자열
-    :param class_name: 예측된 클래스 이름 (예: "threat_detection")
-    :return: 정규화된 JSON 객체
-    """
+def normalize_log(raw_log, class_uid) -> dict:
     schema = load_class_json(class_uid)
 
     prompt = f"""Given this raw log:
@@ -15,10 +13,12 @@ def normalize_log(raw_log, class_uid) -> dict:
 {raw_log}
 
 And the following OCSF JSON schema:
-{json.dumps(schema, indent=2)}
+{schema}
 
 Convert the log into a JSON object that follows the schema.
-Return only the JSON output.
+Do NOT include code blocks, comments, or markdown.
+Return only minified JSON (no pretty-print, no markdown, no escaping, no code block).
+
 """
 
     try:
