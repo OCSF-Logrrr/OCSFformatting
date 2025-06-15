@@ -30,8 +30,8 @@ OUTPUT_KAFKA_BOOTSTRAP_SERVERS = "localhost:9092"
 OUTPUT_KAFKA_TOPIC = "ocsf-logs"
 ```
 
-해당 설정은 `stream_loop.py` 및 `kafka_handler.py`에서 사용되며,  
-Kafka 브로커와 주고받을 토픽 및 그룹 ID를 정의합니다.
+> 해당 설정은 `stream_loop.py` 및 `kafka_handler.py`에서 사용되며,  
+> Kafka 브로커와 주고받을 토픽 및 그룹 ID를 정의합니다.
 
 ---
 
