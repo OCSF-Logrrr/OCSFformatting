@@ -11,9 +11,9 @@ Elasticsearch에 저장하고 Kibana에서 시각화 및 탐지가 가능하도�
 - **활용 스택**: Kafka, Python, Elasticsearch, Kibana, OCSF, LLM(GPT) 등
 - **주요 기능**
   - 원본 로그 수신 및 분류
-  - OCSF 스키마 기반 매핑
+  - 원본 로그의 class_uid 판단단
+  - LLM을 이용하여 OCSF 스키마 기반 매핑
   - Kafka 연동 처리
-  - LLM을 통한 로그 의미 분석 보조 (선택적)
 
 ---
 
@@ -73,7 +73,7 @@ Kafka 브로커가 사전에 실행되어 있어야 하며,
 2. 로그를 OCSF 클래스 판단 (`classifier.py`)
 3. 관련 JSON 스키마 로딩 (`schema_loader.py`)
 4. 필드 정규화 및 매핑 (`mapping.py`)
-5. 필요 시 GPT 기반 판단 보조 (`llm.py`)
+5. LLM 모델 설정 (`llm.py`)
 6. Kafka로 재전송 (`kafka_handler.py`)
 
 ---
