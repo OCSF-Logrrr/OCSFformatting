@@ -6,40 +6,7 @@ app 디렉토리 내부에 있는 파이썬 파일들을 각각 설명합니다.
 `app/` 디렉토리는 로그 수집 → 분류(classify) → 정규화(mapping) → 전달까지의 전처리 핵심 로직을 포함합니다.  
 Kafka를 통해 전달된 원본 로그를 OCSF 포맷으로 정규화하고, Elasticsearch로 전송하기 위한 준비 단계를 담당합니다.
 
----
 
-## ⚙️ 구성 요소
-
-- `classifier.py`   
-  원본 로그를 분석하여 몇 번 클래스의 OCSF format인지 결정하는 기능
-
-- `kafka_handler.py`  
-  kafka에서 원본로그를 받아 오고, OCSF format으로 매핑된 로그를 kafka로 전달하는 기능
-
-- `llm.py`   
-  사용할 LLM 세팅
-
-- `mapping.py`   
-  LLM을 통해 OCSF 매핑 수행
-
-- `schema_loader.py`   
-  사용할 class json 파일을 class_schemas/ 에서 가져오는 기능
-
-- `stream_loop.py`   
-  kafka에 있는 로그를 지속적으로 읽어오는 기능
-
----
-
-### 처리 흐름 순서 (예시)
-1. `stream_loop.py`: Kafka에서 로그 스트리밍
-2. `classifier.py`: 로그의 OCSF 클래스 판별
-3. `schema_loader.py`: 클래스별 스키마 로딩
-4. `mapping.py`: OCSF 포맷으로 정규화
-5. `llm.py`: LLM 사용 시 후처리 또는 판단 보완
-6. `kafka_handler.py`: Kafka로 최종 전송
-
-
----
 
 ## 🔄 로그 처리 흐름과 구성 요소 설명
 
