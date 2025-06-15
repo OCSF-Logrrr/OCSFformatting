@@ -46,9 +46,8 @@ Kafka를 통해 전달된 원본 로그를 OCSF 포맷으로 정규화하고, El
 
 Jun 14 18:22:00 ubuntu sshd[1483]: Accepted password for user1 from 192.168.0.1 port 51234 ssh2
 
+#### OCSF 정규화 결과 (출력)
 ```
-bash
-# OCSF 정규화 결과 (출력)
 json
 {
   "class_uid": 3001,
