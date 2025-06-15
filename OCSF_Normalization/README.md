@@ -11,7 +11,7 @@ Elasticsearch에 저장하고 Kibana에서 시각화 및 탐지가 가능하도�
 - **활용 스택**: Kafka, Python, Elasticsearch, Kibana, OCSF, LLM(GPT) 등
 - **주요 기능**
   - 원본 로그 수신 및 분류
-  - 원본 로그의 class_uid 판단단
+  - 원본 로그의 class_uid 판단
   - LLM을 이용하여 OCSF 스키마 기반 매핑
   - Kafka 연동 처리
 
