@@ -23,8 +23,8 @@ Kafka로부터 수신한 원본 로그는 아래의 순서로 처리되어 OCSF 
 | ④ 정규화 | `mapping.py`         | 불러온 스키마 기준으로 LLM을 이용하여 로그를 OCSF 포맷으로 정규화합니다. |
 | ⑤ 전송 | `kafka_handler.py`   | 최종 정규화된 로그를 Kafka로 재전송합니다. |
 
-> 💡`class_schemas/` 폴더에는 OCSF 클래스별 스키마(JSON)가 정의되어 있으며,    
-> 💡`configs/keyword.json`은 `classifier.py`에서 키워드 기반 분류 기준으로 사용됩니다.
+> 🚨`class_schemas/` 폴더에는 OCSF 클래스별 스키마(JSON)가 정의되어 있으며,    
+> 🚨`configs/keyword.json`은 `classifier.py`에서 키워드 기반 분류 기준으로 사용됩니다.
 
 ---
 
