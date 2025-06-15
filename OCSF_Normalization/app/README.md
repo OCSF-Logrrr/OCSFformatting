@@ -29,9 +29,7 @@ Kafka를 통해 전달된 원본 로그를 OCSF 포맷으로 정규화하고, El
   kafka에 있는 로그를 지속적으로 읽어오는 기능
 
 ---
-### 코드 흐름 순서 표시
 
-md
 ### 처리 흐름 순서 (예시)
 1. `stream_loop.py`: Kafka에서 로그 스트리밍
 2. `classifier.py`: 로그의 OCSF 클래스 판별
