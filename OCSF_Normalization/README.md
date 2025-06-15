@@ -70,7 +70,7 @@ Kafka 브로커가 사전에 실행되어 있어야 하며,
 ## 🔄 로그 처리 흐름 요약
 
 1. Kafka에서 원본 로그 수신 (`stream_loop.py`)
-2. 로그를 OCSF 클래스 판단 (`classifier.py`)
+2. 로그가 몇 번 OCSF 클래스인지 판단 (`classifier.py`)
 3. 관련 JSON 스키마 로딩 (`schema_loader.py`)
 4. 필드 정규화 및 매핑 (`mapping.py`)
 5. LLM 모델 설정 (`llm.py`)
