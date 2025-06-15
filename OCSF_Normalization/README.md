@@ -21,20 +21,29 @@ Elasticsearch에 저장하고 Kibana에서 시각화 및 탐지가 가능하도�
 
 ```
 project_root/
-├── app/                  # 정규화 처리 핵심 로직
-│   ├── classifier.py     # 로그 OCSF 클래스 판단
-│   ├── mapping.py        # OCSF 필드 매핑
-│   ├── schema_loader.py  # OCSF 스키마 불러오기
-│   ├── kafka_handler.py  # Kafka 입출력 처리
-│   ├── stream_loop.py    # Kafka 로그 수신 스트리밍
-│   └── llm.py            # LLM 판단 로직
-├── class_schemas/        # OCSF 클래스별 스키마(JSON)
-├── configs/              # Kafka 설정, 키워드 정의
+│
+├── app/
+│   ├── __init__.py
+│   ├── classifier.py       # 로그가 어떤 클래스인지 판단
+│   ├── enum_mapper.py      # enum 타입 매핑 지원
+│   ├── kafka_handler.py    # kafka handling
+│   ├── llm.py              # llm 사용 정보 관리
+│   ├── mapping.py          # 실질적인 필드 매핑 진행
+│   ├── schema_loader.py    # class_schemas/ 에서 해당 클래스의 JSON 가져옴
+│   └── stream_loop.py      # kafka에서 raw logs를 지속적으로 읽어와 main에 전달
+│
+├── class_schemas/          # OCSF 클래스마다의 JSON 파일 저장되어 있음
+│   ├── __init__.py
+│   └── ...
+│
+├── configs/
+│   ├── __init__.py
 │   ├── kafka_config.py
-│   ├── keyword.json
-│   └── README.md
-├── requirements.txt      # Python 의존성 목록
-└── main.py               # 실행 진입점
+│   └── keyword.json
+│
+├── __init__.py
+├── main.py
+└── requirements.txt
 ```
 
 ---
