@@ -14,9 +14,9 @@ def main():
         except json.JSONDecodeError:
             continue
 
-        class_id = predict_class(log_data)
+        class_uid = predict_class(log_data)
         
-        ocsf_log = normalize_log(log_data, class_id)
+        ocsf_log = normalize_log(log_data, class_uid)
         
         if ocsf_log:
             send_to_kafka(ocsf_log)
