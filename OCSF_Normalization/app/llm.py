@@ -3,21 +3,15 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key="your key")
+client = OpenAI(api_key="your-api-key)
 
 def call_llm(log_data: str, temperature: float = 0.2) -> str:
-    prompt = f"""
-    다음 로그를 OCSF 스키마에 따라 정규화된 JSON 형식으로 변환해줘.
-    로그:
-    {log_data}
-    """
-
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-4.1-mini",
             messages=[
                 {"role": "system", "content": "You are a cybersecurity log normalization assistant."},
-                {"role": "user", "content": prompt}
+                {"role": "user", "content": log_data}
             ],
             temperature=temperature,
         )
