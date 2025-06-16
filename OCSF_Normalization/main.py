@@ -23,7 +23,7 @@ async def process_log(raw_log, semaphore):
     async with semaphore:
         ocsf_log = await normalize_log(log_data, class_uid)
         if ocsf_log:
-            send_to_kafka(json.dumps(ocsf_log))
+            send_to_kafka(ocsf_log)
 
 
 async def main():
