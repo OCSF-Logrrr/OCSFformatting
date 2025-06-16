@@ -26,8 +26,6 @@ Raw log:
 
 OCSF JSON schema:
 {schema}
-
-
 """
     try:
         loop = asyncio.get_running_loop()
