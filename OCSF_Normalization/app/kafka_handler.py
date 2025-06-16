@@ -30,7 +30,7 @@ def receive_log(timeout=1.0) -> str | None:
         logging.warning(f"Kafka decode error: {e}")
         return None
 
-def send_to_kafka(mapped_log: dict):
+def send_to_kafka(mapped_log):
     try:
         producer.produce(OUTPUT_KAFKA_TOPIC, value=json.dumps(mapped_log))
         producer.flush()
