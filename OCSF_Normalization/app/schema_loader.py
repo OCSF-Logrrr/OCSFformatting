@@ -4,7 +4,6 @@ import os
 import json
 
 def load_class_json(class_uid) -> dict:
-
     filename = f"{class_uid}.json"
     filepath = os.path.join("class_schemas", filename)
 
