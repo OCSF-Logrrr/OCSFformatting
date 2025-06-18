@@ -13,7 +13,7 @@ consumer_conf = {
     'group.id': INPUT_GROUP_ID,
     'auto.offset.reset': 'latest',
     'enable.auto.commit': True
-    }
+}
 consumer = Consumer(consumer_conf)
 consumer.subscribe([INPUT_KAFKA_TOPIC])
 
