@@ -5,7 +5,6 @@ from app.kafka_handler import receive_log
 
 logging.basicConfig(level=logging.INFO)
 
-# 처리 책임은 main.py
 def stream_logs():
     logging.info("Started raw log streaming from Kafka...")
 
