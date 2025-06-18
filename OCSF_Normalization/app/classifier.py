@@ -28,8 +28,8 @@ def predict_class(log: dict | str) -> int | None:
         for rank, keyword in enumerate(keywords, start=1):
             idx = log_text.find(keyword.lower())
             if idx >= 0:
-                position_ratio = idx / len(log_text)            # 0(앞쪽)~1(뒤쪽)
-                position_weight = math.exp(-2 * position_ratio) # λ=2 감쇠 계수
+                position_ratio = idx / len(log_text)               # 0(앞쪽)~1(뒤쪽)
+                position_weight = math.exp(-2 * position_ratio)    # λ=2 감쇠 계수
                 rank_weight = 1 / rank
 
                 total_score += position_weight * rank_weight
@@ -44,5 +44,4 @@ def predict_class(log: dict | str) -> int | None:
         chosen = min(int(uid) for uid in candidates)
         return chosen
 
-    # None: 일치X (LLM 호출 등 추가 작업 필요)
     return None
