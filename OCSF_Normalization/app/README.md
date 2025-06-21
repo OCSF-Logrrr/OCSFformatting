@@ -18,7 +18,7 @@ Kafka로부터 수신한 원본 로그는 아래의 순서로 처리되어 OCSF 
 | 순서 | 파일명             | 설명 |
 |------|--------------------|------|
 | ① 수신 | `stream_loop.py`     | Kafka에서 원본 로그를 지속적으로 읽어옵니다. |
-| ② 분류 | `classifier.py`      | 로그를 분석해 어떤 OCSF 클래스(`class_uid`)인지 판단합니다. |
+| ② 분류 | `classifier.pyx`      | 로그를 분석해 어떤 OCSF 클래스(`class_uid`)인지 판단합니다. |
 | ③ 스키마 로딩 | `schema_loader.py`   | 해당 클래스의 JSON 스키마를 `class_schemas/`에서 로딩합니다. |
 | ④ 정규화 | `mapping.py`         | 불러온 스키마 기준으로 LLM을 이용하여 로그를 OCSF 포맷으로 정규화합니다. |
 | ⑤ 전송 | `kafka_handler.py`   | 최종 정규화된 로그를 Kafka로 재전송합니다. |
