@@ -24,41 +24,13 @@ project_root/
 │
 ├── app/
 │   ├── __init__.py
-│   ├── classifier.py       # 로그가 어떤 클래스인지 판단
+│   ├── classifier.pyx      # 로그가 어떤 클래스인지 판단
 │   ├── enum_mapper.py      # enum 타입 매핑 지원
 │   ├── kafka_handler.py    # kafka handling
 │   ├── llm.py              # llm 사용 정보 관리
 │   ├── mapping.py          # 실질적인 필드 매핑 진행
 │   ├── schema_loader.py    # class_schemas/ 에서 해당 클래스의 JSON 가져옴
-│   └── stream_loop.py      # kafka에서 raw logs를 지속적으로 읽어와 main에 전달
-│
-├── class_schemas/          # OCSF 클래스마다의 JSON 파일 저장되어 있음
-│   ├── __init__.py
-│   └── ...
-│
-├── configs/
-│   ├── __init__.py
-│   ├── kafka_config.py
-│   └── keyword.json
-│
-├── __init__.py
-├── main.py
-└── requirements.txt
-```
-
----
-
-## 🚀 실행 방법
-
-```bash
-# 가상환경 설정 (선택)
-python3 -m venv venv
-source venv/bin/activate
-
-# 패키지 설치
-pip install -r requirements.txt
-
-# 실행
+│   └── stream_loop.py      # kafka에서 raw logs를 행
 python main.py
 ```
 
@@ -70,7 +42,7 @@ Kafka 브로커가 사전에 실행되어 있어야 하며,
 ## 🔄 로그 처리 흐름 요약
 
 1. Kafka에서 원본 로그 수신 (`stream_loop.py`)
-2. 로그가 몇 번 OCSF 클래스인지 판단 (`classifier.py`)
+2. 로그가 몇 번 OCSF 클래스인지 판단 (`classifier.pyx`)
 3. 관련 JSON 스키마 로딩 (`schema_loader.py`)
 4. 필드 정규화 및 매핑 (`mapping.py`)
 5. LLM 모델 설정 (`llm.py`)
