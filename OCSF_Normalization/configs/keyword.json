@@ -30,7 +30,7 @@
   "4008": {"class_name": "FTP Activity", "keywords": ["ftp", "file upload", "file download", "user", "pass", "login", "transfer complete", "port 21", "passive mode", "active mode"]},
   "4009": {"class_name": "Email Activity", "keywords": ["email sent", "email received", "phishing", "spam", "mail from", "rcpt to", "subject", "smtp", "sendmail", "postfix"]},
   "4013": {"class_name": "NTP Activity", "keywords": ["time sync", "time server", "synchronization", "ntp", "ntpd", "ntpq", "offset", "drift", "clock skew", "stratum"]},
-  "4014": {"class_name": "Tunnel Activity", "keywords": ["tunnel established", "vpn", "encryption", "ipsec", "openvpn", "wireguard", "pptp", "l2tp", "tun0", "gre"]}
+  "4014": {"class_name": "Tunnel Activity", "keywords": ["tunnel established", "vpn", "encryption", "ipsec", "openvpn", "wireguard", "pptp", "l2tp", "tun0", "gre"]},
   "5001": {"class_name": "Device Inventory Info", "keywords": ["device", "device type", "hostname", "mac address", "ip address", "inventory", "asset", "hardware", "system info", "manufacturer"]},
   "5003": {"class_name": "User Inventory Info", "keywords": ["user", "username", "uid", "gid", "group", "user info", "home directory", "shell", "profile", "last login"]},
   "5004": {"class_name": "Operating System Patch State", "keywords": ["security update", "patch", "update", "package update", "installed", "kernel version", "os version", "dpkg", "apt", "yum"]},
@@ -45,7 +45,7 @@
   "6005": {"class_name": "Datastore Activity", "keywords": ["sql", "query", "select", "insert", "update", "delete", "database", "transaction", "db connection", "db user"]},
   "6006": {"class_name": "File Hosting Activity", "keywords": ["file uploaded", "file synced", "folder shared", "cloud storage", "public link", "onedrive", "google drive", "dropbox", "box", "sharefile"]},
   "6007": {"class_name": "Scan Activity", "keywords": ["nmap", "nessus", "masscan", "port scan", "open port", "closed port", "udp scan", "syn scan", "xmas scan", "scanner"]},
-  "6008": {"class_name": "Application Error", "keywords": ["error", "exception", "application failed", "crash", "fatal", "core dumped", "null pointer", "stack trace", "exit code", "error log"]}
+  "6008": {"class_name": "Application Error", "keywords": ["error", "exception", "application failed", "crash", "fatal", "core dumped", "null pointer", "stack trace", "exit code", "error log"]},
   "7001": {"class_name": "Remediation Activity", "keywords": ["remediated", "resolved", "mitigated", "quarantined", "cleaned", "threat neutralized", "incident resolved", "action taken", "containment", "issue closed"]},
   "7002": {"class_name": "File Remediation Activity", "keywords": ["malicious file", "file deleted", "quarantined file", "cleaned file", "file purged", "file removed", "file locked", "restored file", "encrypted file", "renamed file"]},
   "7003": {"class_name": "Process Remediation Activity", "keywords": ["process killed", "process terminated", "quarantined process", "neutralized process", "blocked process", "mitigated", "suspicious process", "restarted process", "shutdown", "service stopped"]},
