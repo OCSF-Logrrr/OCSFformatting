@@ -11,8 +11,9 @@ logging.basicConfig(level=logging.INFO)
 consumer_conf = {
     'bootstrap.servers': INPUT_KAFKA_BOOTSTRAP_SERVERS,
     'group.id': INPUT_GROUP_ID,
-    'auto.offset.reset': 'latest',
-    'enable.auto.commit': True
+    'auto.offset.reset': 'earliest',
+    'enable.auto.commit': True,
+    'max.poll.interval.ms': 60000000
 }
 consumer = Consumer(consumer_conf)
 consumer.subscribe([INPUT_KAFKA_TOPIC])
@@ -31,7 +32,7 @@ def receive_log(timeout=1.0) -> str | None:
         return None
 
 
-def send_to_kafka(mapped_log):
+async def send_to_kafka(mapped_log):
 
     def fix_message_field(mapped_log: dict) -> dict:
         if "message" in mapped_log and isinstance(mapped_log["message"], str):
@@ -46,6 +47,6 @@ def send_to_kafka(mapped_log):
         producer.produce(OUTPUT_KAFKA_TOPIC, value=json.dumps(mapped_log))
         producer.flush()
         logging.info("Sent to Kafka (ocsf-logs)")
-
     except Exception as e:
         logging.error(f"Kafka send error: {e}")
+        
