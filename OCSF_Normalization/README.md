@@ -25,7 +25,6 @@ project_root/
 ├── app/
 │   ├── __init__.py
 │   ├── classifier.pyx      # 로그가 어떤 클래스인지 판단
-│   ├── enum_mapper.py      # enum 타입 매핑 지원
 │   ├── kafka_handler.py    # kafka handling
 │   ├── llm.py              # llm 사용 정보 관리
 │   ├── mapping.py          # 실질적인 필드 매핑 진행
