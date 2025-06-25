@@ -26,9 +26,9 @@ cpdef int predict_class(object log):
     cdef double total_score, position_ratio, position_weight, rank_weight, max_score
     cdef int log_len, idx, rank, chosen, int_uid
 
-
     if isinstance(log, dict):
-        log_bytes = json.dumps(log, ensure_ascii=False).lower().encode('utf-8')
+        log_values = ' '.join([str(v) for v in log.values()])
+        log_bytes = log_values.lower().encode('utf-8')
     else:
         log_bytes = str(log).lower().encode('utf-8')
 
@@ -46,7 +46,7 @@ cpdef int predict_class(object log):
 
             if strstr(log_bytes, keyword_b) != NULL:
                 idx = log_bytes.find(keyword_b)
-                position_ratio = idx / log_len
+                position_ratio = idx / (log_len ** 0.5)
                 position_weight = exp(-2.0 * position_ratio)
                 rank_weight = 1.0 / rank
                 total_score += position_weight * rank_weight
