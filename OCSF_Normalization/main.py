@@ -3,7 +3,7 @@
 import json
 import asyncio
 from app.stream_loop import stream_logs
-from app.pclassifier import predict_class
+from app.classifier import predict_class
 from app.mapping import normalize_log
 from app.kafka_handler import send_to_kafka
 
