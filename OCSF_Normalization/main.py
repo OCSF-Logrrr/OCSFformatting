@@ -8,7 +8,7 @@ from app.mapping import normalize_log
 from app.kafka_handler import send_to_kafka
 
 
-CONCURRENT_TASKS = 20
+CONCURRENT_TASKS = 10
 SKIP_CLASSES = {-1, 1003, 1008, 1006, 5001, 5003, 5020, 5023}
 
 
@@ -26,7 +26,7 @@ async def process_log(raw_log, kafka_lock):
     try:
         ocsf_log = await normalize_log(log_data, class_uid)
     except Exception as e:
-        print("Error during normalization:", e)
+        print("Error during normalization:", raw_log)
         return
 
     if ocsf_log:
@@ -34,7 +34,7 @@ async def process_log(raw_log, kafka_lock):
             try:
                 await send_to_kafka(ocsf_log)
             except Exception as e:
-                print("Error sending to Kafka:", e)
+                print("Error sending to Kafka:", raw_log)
 
 
 async def main():
@@ -60,4 +60,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    
