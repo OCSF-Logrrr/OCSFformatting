@@ -96,7 +96,7 @@
     "user_agent": "String",
     "version": "String"
   },
-  "http_reponse": {
+  "http_response": {
     "code": "Integer",
     "http_headers": {
       "name": "String",
