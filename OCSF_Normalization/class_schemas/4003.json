@@ -184,7 +184,7 @@
       "99": { "caption": "Other" }
     }
   },
-  "reponse_time": "Timestamp",
+  "response_time": "Timestamp",
   "severity_id": {
     "enum": {
       "0": { "caption": "Unknown" },
