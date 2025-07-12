@@ -3,11 +3,11 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Assign Privileges" },
-      "2": { "captopn": "Revoke Privileges" },
-      "3": { "captopn": "Add User" },
-      "4": { "captopn": "Remove User" },
-      "5": { "captopn": "Delete" },
-      "6": { "captopn": "Create" },
+      "2": { "caption": "Revoke Privileges" },
+      "3": { "caption": "Add User" },
+      "4": { "caption": "Remove User" },
+      "5": { "caption": "Delete" },
+      "6": { "caption": "Create" },
       "99": { "caption": "Other" }
     }
   },
