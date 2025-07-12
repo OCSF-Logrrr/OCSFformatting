@@ -277,7 +277,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "100300": { "caption": "Kernel Activity: Unknown" },
