@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Put" },
-      "2": { "captopn": "Get" },
+      "2": { "caption": "Get" },
       "3": { "caption": "Poll" },
       "4": { "caption": "Delete" },
       "5": { "caption": "Rename" },
