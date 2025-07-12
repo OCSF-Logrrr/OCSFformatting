@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Open" },
-      "2": { "captopn": "Close" },
+      "2": { "caption": "Close" },
       "3": { "caption": "Renew" },
       "99": { "caption": "Other" }
     }
