@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Query" },
-      "2": { "captopn": "Response" },
+      "2": { "caption": "Response" },
       "6": { "caption": "Traffic" },
       "99": { "caption": "Other" }
     }
