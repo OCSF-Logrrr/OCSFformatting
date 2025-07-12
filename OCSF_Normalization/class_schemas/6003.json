@@ -418,7 +418,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "600300": { "caption": "API Activity: Unknown" },
