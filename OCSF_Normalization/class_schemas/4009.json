@@ -17,7 +17,7 @@
       "0": { "caption": "Unknown" },
       "1": { "caption": "Inbound" },
       "2": { "caption": "Outbound" },
-      "3": { "caption": "Lateral" },
+      "3": { "caption": "Intenal" },
       "99": { "caption": "Other" }
     }
   },
