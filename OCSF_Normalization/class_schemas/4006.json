@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "File Supersede" },
-      "2": { "captopn": "File Open" },
+      "2": { "caption": "File Open" },
       "3": { "caption": "File Create" },
       "4": { "caption": "File Open If" },
       "5": { "caption": "File Overwrite" },
