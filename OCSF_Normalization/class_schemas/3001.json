@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Create" },
-      "2": { "captopn": "Enable" },
+      "2": { "caption": "Enable" },
       "3": { "caption": "Password Change" },
       "4": { "caption": "Password Reset" },
       "5": { "caption": "Disable" },
@@ -12,7 +12,7 @@
       "8": { "caption": "Detach Policy" },
       "9": { "caption": "Lock" },
       "10": { "caption": "MFA Factor Enable" },
-      "11": { "caption": "MFA Facroe Disable" },
+      "11": { "caption": "MFA Factor Disable" },
       "12": { "caption": "Unlock" },
       "99": { "caption": "Other" }
     }
@@ -142,9 +142,9 @@
       "300107": { "caption": "Account Change: Attach Policy" },
       "300108": { "caption": "Account Change: Detach Policy" },
       "300109": { "caption": "Account Change: Lock" },
-      "3001010": { "caption": "Account Change: MFA Factor Enable" },
-      "3001011": { "caption": "Account Change: MFA Factor Disable" },
-      "3001012": { "caption": "Account Change: Unlock" },
+      "300110": { "caption": "Account Change: MFA Factor Enable" },
+      "300111": { "caption": "Account Change: MFA Factor Disable" },
+      "300112": { "caption": "Account Change: Unlock" },
       "300199": { "caption": "Authentication: Other" }
     }
   },
