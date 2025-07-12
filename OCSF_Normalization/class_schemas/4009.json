@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Send" },
-      "2": { "captopn": "Receive" },
+      "2": { "caption": "Receive" },
       "3": { "caption": "Scan" },
       "4": { "caption": "Trace" },
       "99": { "caption": "Other" }
@@ -17,7 +17,7 @@
       "0": { "caption": "Unknown" },
       "1": { "caption": "Inbound" },
       "2": { "caption": "Outbound" },
-      "3": { "caption": "Intenal" },
+      "3": { "caption": "Internal" },
       "99": { "caption": "Other" }
     }
   },
