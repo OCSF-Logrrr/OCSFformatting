@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Symmetric Active Exchange" },
-      "2": { "captopn": "Symmetric Passive Response" },
+      "2": { "caption": "Symmetric Passive Response" },
       "3": { "caption": "Client Synchronization" },
       "4": { "caption": "Server Response" },
       "5": { "caption": "Broadcast" },
