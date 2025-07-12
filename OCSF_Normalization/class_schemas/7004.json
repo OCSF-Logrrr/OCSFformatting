@@ -28,7 +28,7 @@
     "class_uid": 7004,
     "command_uid": "String",
     "connection_info": {
-        "diection_id": {
+        "direction_id": {
             "enum": {
                 "0": {
                     "caption": "Unknown"
