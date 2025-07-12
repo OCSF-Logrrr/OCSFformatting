@@ -107,7 +107,7 @@
       "uid": "String"
     }
   },
-  "category_uid": "System Activity",
+  "category_uid": 1,
   "class_uid": 1009,
   "device": {
     "hostname": "Hostname",
