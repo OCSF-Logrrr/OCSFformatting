@@ -122,7 +122,7 @@
       "message": "String"
     }
   },  
-  "category_uid": "Application Activity",
+  "category_uid": 6,
   "class_uid": 6003,
   "dst_endpoint": {
     "hostname": "Hostname",
