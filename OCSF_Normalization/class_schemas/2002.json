@@ -18,16 +18,8 @@
             }
         }
     },
-    "category_uid": {
-        "2": {
-            "caption": "Findings"
-        }
-    },
-    "class_uid": {
-        "2002": {
-            "caption": "Vulnerability Finding"
-        }
-    },
+    "category_uid": 2,
+    "class_uid": 2002,
     "confidence_id": {
         "enum": {
             "0": {
