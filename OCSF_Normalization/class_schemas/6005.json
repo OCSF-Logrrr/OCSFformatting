@@ -116,7 +116,7 @@
       }
     }
   }, 
-  "category_uid": "Application Activity",
+  "category_uid": 6,
   "class_uid": 6005,
   "database": {
     "name": "String",
