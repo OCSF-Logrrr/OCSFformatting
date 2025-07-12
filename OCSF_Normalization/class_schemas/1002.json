@@ -293,7 +293,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "100200": { "caption": "Kernel Extension Activity: Unknown" },
