@@ -236,7 +236,7 @@
         "just_one": [
             {
                 "connection_info": {
-                    "diection_id": {
+                    "direction_id": {
                         "enum": {
                             "0": {
                                 "caption": "Unknown"
