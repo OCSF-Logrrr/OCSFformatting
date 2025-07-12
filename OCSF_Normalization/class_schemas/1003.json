@@ -124,16 +124,8 @@
         "uid": "String"
     }
   },
-  "category_uid": {
-    "enum": {
-      "1": { "caption": "System Activity" }
-    }
-  },
-  "class_uid": {
-    "enum": {
-      "1003": { "caption": "Kernel Activity" }
-    }
-  },
+  "category_uid": 1,
+  "class_uid": 1003,
   "device": {
     "hostname": "Hostname",
     "instance_uid": "String",
