@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Connect" },
-      "2": { "captopn": "Delete" },
+      "2": { "caption": "Delete" },
       "3": { "caption": "Get" },
       "4": { "caption": "Head" },
       "5": { "caption": "Options" },
