@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Initial Request" },
-      "2": { "captopn": "Initial Response" },
+      "2": { "caption": "Initial Response" },
       "3": { "caption": "Connect Request" },
       "4": { "caption": "Connect Response" },
       "5": { "caption": "TLS Handshake" },
