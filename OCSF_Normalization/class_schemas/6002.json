@@ -113,7 +113,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "600200": { "caption": "Application Lifecycle: Unknown" },
