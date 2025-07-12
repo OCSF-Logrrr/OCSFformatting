@@ -115,7 +115,7 @@
       }
     }
 },
-  "category_uid": "System Activity",
+  "category_uid": 1,
   "class_uid": 1004,
   "device": {
     "hostname": "Hostname",
@@ -257,7 +257,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "100400": { "caption": "Memory Activity: Unknown" },
