@@ -11,7 +11,7 @@
         "99": { "caption": "Other" }
     }
   },
-  "category_uid": "System Activity",
+  "category_uid": 1,
   "class_uid": 1006,
   "device": {
     "hostname": "Hostname",
@@ -202,7 +202,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "100600": { "caption": "Scheduled Job Activity: Unknown" },
