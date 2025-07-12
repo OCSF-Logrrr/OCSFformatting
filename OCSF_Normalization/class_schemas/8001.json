@@ -18,7 +18,7 @@
     "category_uid": 8,
     "class_uid": 8001,
     "connection_info": {
-        "diection_id": {
+        "direction_id": {
             "enum": {
                 "0": {
                     "caption": "Unknown"
