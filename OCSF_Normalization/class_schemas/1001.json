@@ -30,7 +30,7 @@
       "uid": "String"
     }
   },
-  "category_uid": "Integer",
+  "category_uid": 1,
   "class_uid": 1001,
   "component": "String",
   "create_mask": "String",
