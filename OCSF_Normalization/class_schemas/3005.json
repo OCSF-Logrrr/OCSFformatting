@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Assign Privileges" },
-      "2": { "captopn": "Revoke Privileges" },
+      "2": { "caption": "Revoke Privileges" },
       "99": { "caption": "Other" }
     }
   },
