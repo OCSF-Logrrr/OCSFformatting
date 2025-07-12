@@ -15,7 +15,7 @@
         "99": { "caption": "Other" }
     }
   },
-  "category_uid": "Application Activity",
+  "category_uid": 6,
   "class_uid": 6007,
   "commmand_uid": "String",
   "duration": "Long",
