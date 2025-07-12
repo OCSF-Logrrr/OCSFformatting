@@ -133,14 +133,10 @@
   "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
-      "300300": { "caption": "Authentication: Unknown" },
-      "300301": { "caption": "Authentication: Logon" },
-      "300302": { "caption": "Authentication: Logoff" },
-      "300303": { "caption": "Authentication: Authentication Ticket" },
-      "300304": { "caption": "Authentication: Service Ticket Request" },
-      "300305": { "caption": "Authentication: Service Ticket Renew" },
-      "300306": { "caption": "Authentication: Preauth" },
-      "300399": { "caption": "Authentication: Other" }
+      "300300": { "caption": "Authorize Session: Unknown" },
+      "300301": { "caption": "Authorize Session: Assign" },
+      "300302": { "caption": "Authorize Session: Assign Groups" },
+      "300399": { "caption": "Authorize Session: Other" }
     }
   },
   "user": {
