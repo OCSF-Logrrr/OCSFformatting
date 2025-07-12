@@ -215,7 +215,7 @@
       "400604": { "caption": "SMB Activity: File Open If" },
       "400605": { "caption": "SMB Activity: File Overwrite" },
       "400606": { "caption": "SMB Activity: File Overwrite If" },
-      "400699": { "caption": "SMB Activity: Unknown" }
+      "400699": { "caption": "SMB Activity: Other" }
     }
   }
 }
