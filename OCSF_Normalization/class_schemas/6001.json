@@ -302,7 +302,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "integer",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "600100": { "caption": "Web Resources Activity: Unknown" },
