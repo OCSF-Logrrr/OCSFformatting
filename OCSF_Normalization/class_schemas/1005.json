@@ -108,7 +108,7 @@
       }
     }
 },
-  "category_uid": "System Activity",
+  "category_uid": 1,
   "class_uid": 1005,
   "device": {
     "hostname": "Hostname",
@@ -248,7 +248,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_uid": {
     "enum": {
       "100500": { "caption": "Module Activity: Unknown" },
