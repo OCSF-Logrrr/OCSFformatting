@@ -463,7 +463,7 @@
     "uid": "String"
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "type_id": {
     "enum": {
         "0": {"caption": "Unknown"},
