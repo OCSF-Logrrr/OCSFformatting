@@ -146,7 +146,7 @@
     }
   },
   "time": "Timestamp",
-  "timezone_offset": "540",
+  "timezone_offset": "Integer",
   "total": "Integer",
   "type_id": {
     "enum": {
