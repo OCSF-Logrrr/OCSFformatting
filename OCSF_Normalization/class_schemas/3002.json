@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Logon" },
-      "2": { "captopn": "Logoff" },
+      "2": { "caption": "Logoff" },
       "3": { "caption": "Authentication Ticket" },
       "4": { "caption": "Service Ticket Request" },
       "5": { "caption": "Service Ticket Renew" },
