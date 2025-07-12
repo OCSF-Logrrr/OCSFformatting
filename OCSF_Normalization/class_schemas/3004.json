@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Create" },
-      "2": { "captopn": "Read" },
+      "2": { "caption": "Read" },
       "3": { "caption": "Update" },
       "4": { "caption": "Delete" },
       "5": { "caption": "Move" },
@@ -12,7 +12,7 @@
       "8": { "caption": "Enable" },
       "9": { "caption": "Disable" },
       "10": { "caption": "Activate" },
-      "11": { "caption": "Deativate" },
+      "11": { "caption": "Deactivate" },
       "12": { "caption": "Suspend" },
       "13": { "caption": "Resume" },
       "99": { "caption": "Other" }
