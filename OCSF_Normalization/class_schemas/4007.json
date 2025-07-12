@@ -3,7 +3,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Open" },
-      "2": { "captopn": "Close" },
+      "2": { "caption": "Close" },
       "3": { "caption": "Reset" },
       "4": { "caption": "Fail" },
       "5": { "caption": "Refuse" },
@@ -17,7 +17,7 @@
     "enum": {
       "0": { "caption": "Unknown" },
       "1": { "caption": "Certificate Based" },
-      "2": { "captopn": "GSSAPI" },
+      "2": { "caption": "GSSAPI" },
       "3": { "caption": "Host Based" },
       "4": { "caption": "Keyboard Interactive" },
       "5": { "caption": "Password" },
@@ -34,7 +34,7 @@
         "enum": {
           "0": { "caption": "Unknown" },
           "1": { "caption": "MD5" },
-          "2": { "captopn": "SHA-1" },
+          "2": { "caption": "SHA-1" },
           "3": { "caption": "SHA-256" },
           "4": { "caption": "SHA-512" },
           "5": { "caption": "CTPH" },
@@ -165,7 +165,7 @@
         "enum": {
           "0": { "caption": "Unknown" },
           "1": { "caption": "MD5" },
-          "2": { "captopn": "SHA-1" },
+          "2": { "caption": "SHA-1" },
           "3": { "caption": "SHA-256" },
           "4": { "caption": "SHA-512" },
           "5": { "caption": "CTPH" },
