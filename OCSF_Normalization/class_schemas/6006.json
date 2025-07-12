@@ -123,7 +123,7 @@
       }
     }
   }, 
-  "category_uid": "6,
+  "category_uid": 6,
   "class_uid": 6006,
   "dst_endpoint": {
     "hostname": "Hostname",
