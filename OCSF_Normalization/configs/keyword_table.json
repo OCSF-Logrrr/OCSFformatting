@@ -1,0 +1,268 @@
+{
+    "1001": {
+        "class_name": "File System Activity", 
+        "keywords": ["file created", "file deleted", "file modified", "file opened", "chmod", "rm", "unlink", "mv", "cp", "touch", "inotify", "audit"],
+        "event_id": [4663, 5140, 5145]
+    },
+    "1002": {
+        "class_name": "Kernel Extension Activity", 
+        "keywords": ["insmod", "rmmod", "modprobe", "kernel module", "load module", "kernel extension", "init_module", "finit_module", "kextload", "kextunload"],
+        "event_id": []
+    },
+    "1003": {
+        "class_name": "Kernel Activity", 
+        "keywords": ["kernel panic", "BUG:", "soft lockup", "hard lockup", "tainted", "traps", "kernel", "dmesg", "usb", "driver"],
+        "event_id": []
+    },
+    "1004": {
+        "class_name": "Memory Activity", 
+        "keywords": ["OOM", "segfault", "buffer overflow", "heap overflow", "out of memory", "memory corruption", "malloc failed", "free(): invalid", "invalid pointer", "memory leak"],
+        "event_id": []
+        
+    },
+    "1005": {
+        "class_name": "Module Activity", 
+        "keywords": ["module loaded", "module unloaded", "module registered", "module initialized", "module cleanup", "dlopen", "ld.so", "dynamic library", "shared object", ".so"],
+        "event_id": []
+    },
+    "1006": {
+        "class_name": "Scheduled Job Activity", 
+        "keywords": ["CRON", "cron executed", "scheduled job", "job started", "cron.daily", "at job", "crontab", "CMD", "periodic task", "anacron"],
+        "event_id": [4698, 4702]
+    },
+    "1007": {
+        "class_name": "Process Activity", 
+        "keywords": ["exec", "fork", "kill", "terminated", "process started", "process exited", "pid=", "systemd", "zombie", "ps"],
+        "event_id": [4688, 4689, 4697]
+    },
+    "1008": {
+        "class_name": "Event Log Activity", 
+        "keywords": ["event log", "event recorded", "event ID", "log entry", "log message", "log level", "journalctl", "syslog", "rsyslog", "system log"],
+        "event_id": [1100, 1102]
+    },
+    "1009": {
+        "class_name": "Script Activity", 
+        "keywords": ["script executed", "bash", "powershell", "shell script", "script started", "command script", "#!/bin", ".sh", ".py", "perl"],
+        "event_id": []
+    },
+    "2002": {
+        "class_name": "Vulnerability Finding", 
+        "keywords": ["CVE-", "zero day", "remote code execution", "buffer overflow", "exploit", "heap spray", "arbitrary code", "vulnerability", "affected version", "denial of service"],
+        "event_id": []
+    },
+    "2003": {
+        "class_name": "Compliance Finding", 
+        "keywords": ["audit failure", "policy violation", "rule violated", "check failed", "non-compliant", "standard unmet", "configuration drift", "compliance", "cis benchmark", "compliance check"],
+        "event_id": []
+    },
+    "2004": {
+        "class_name": "Detection Finding", 
+        "keywords": ["webshell", "attempted","modsecurity", "alert", "rule match", "signature detected", "triggered", "detection", "threat", "unauthorized access", "intrusion", "indicator", "incident"],
+        "event_id": [4104]
+    },
+    "2005": {
+        "class_name": "Incident Finding", 
+        "keywords": ["incident", "breach", "case opened", "incident id", "escalation", "case status", "response", "containment", "forensics", "timeline"],
+        "event_id": []
+    },
+    "2006": {
+        "class_name": "Data Security Finding", 
+        "keywords": ["data leak", "data exfiltration", "leak detected", "confidential", "data exposure", "sensitive file", "unauthorized transfer", "PII", "GDPR", "HIPAA"],
+        "event_id": []
+    },
+    "2007": {
+        "class_name": "Application Security Posture Finding", 
+        "keywords": ["vulnerable component", "dependency", "sast", "code scan", "library check", "component risk", "dependency checker", "security rating", "SBOM", "appsec"],
+        "event_id": []
+    },
+    "3001": {
+        "class_name": "Account Change", 
+        "keywords": ["account created", "account deleted", "useradd", "userdel", "usermod", "passwd", "chage", "uid", "groupadd", "groupdel"],
+        "event_id": [4720, 4722, 4723, 4724, 4725, 4726]
+    },
+    "3002": {
+        "class_name": "Authentication", 
+        "keywords": ["authentication failure", "Failed password", "invalid user", "login attempt", "Accepted password", "login", "password changed", "session opened", "pam_unix", "sshd"],
+        "event_id": [4624, 4625, 4648, 4672, 4768, 4769, 4776]
+    },
+    "3003": {
+        "class_name": "Authorize Session", 
+        "keywords": ["access granted", "authorized", "authorization success", "session created", "session established", "session id", "JWT", "token", "authz", "role granted"],
+        "event_id": [4778, 4779]
+    },
+    "3004": {
+        "class_name": "Entity Management", 
+        "keywords": ["entity created", "entity deleted", "record updated", "entity", "entity id", "entity name", "identity", "directory", "directory update", "ldap"],
+        "event_id": []
+    },
+    "3005": {
+        "class_name": "User Access Management", 
+        "keywords": ["access granted", "access revoked", "login enabled", "login disabled", "permission changed", "access updated", "role assigned", "group membership", "access policy", "acl"],
+        "event_id": [4717]
+    },
+    "3006": {
+        "class_name": "Group Management", 
+        "keywords": ["group created", "group deleted", "group updated", "group renamed", "group privileges", "group policy", "group membership", "groupadd", "groupdel", "groupmod"],
+        "event_id": [4731, 4732, 4733, 4734, 4798]
+    },
+    "4001": {
+        "class_name": "Network Activity", 
+        "keywords": ["network connection", "connection established", "port scan", "TCP", "UDP", "src_ip", "dst_ip", "protocol", "packet", "netstat"],
+        "event_id": [5156, 5158]
+    },
+    "4002": {
+        "class_name": "HTTP Activity", 
+        "keywords": ["http request", "GET", "POST", "HTTP/1.1", "status=", "host=", "user-agent", "referer=", "apache", "nginx"],
+        "event_id": [5156, 5158]
+    },
+    "4003": {
+        "class_name": "DNS Activity", 
+        "keywords": ["DNS query", "DNS response", "domain name", "resolver", "A record", "AAAA", "MX record", "PTR", "dig", "nslookup"],
+        "event_id": [5154, 5155]
+    },
+    "4004": {
+        "class_name": "DHCP Activity", 
+        "keywords": ["dhcp discover", "dhcp offer", "dhcp request", "dhcp ack", "ip assigned", "lease time", "renew", "release", "dhclient", "bootp"],
+        "event_id": [1048]
+    },
+    "4005": {
+        "class_name": "RDP Activity", 
+        "keywords": ["rdp session", "rdp", "remote desktop", "mstsc", "logon", "disconnect", "reconnect", "3389", "rdpsnd", "rdpssl"],
+        "event_id": [1149]
+    },
+    "4006": {
+        "class_name": "SMB Activity", 
+        "keywords": ["smb", "smbclient", "cifs", "file server", "share", "access denied", "authentication", "session setup", "net use", "\\"],
+        "event_id": [5140]
+    },
+    "4007": {
+        "class_name": "SSH Activity", 
+        "keywords": ["ssh", "sshd", "login", "remote shell", "password auth", "publickey", "port 22", "key exchange", "scp", "sftp"],
+        "event_id": [4103]
+    },
+    "4008": {
+        "class_name": "FTP Activity", 
+        "keywords": ["ftp", "file upload", "file download", "user", "pass", "login", "transfer complete", "port 21", "passive mode", "active mode"],
+        "event_id": [6272]
+    },
+    "4009": {
+        "class_name": "Email Activity", 
+        "keywords": ["email sent", "email received", "phishing", "spam", "mail from", "rcpt to", "subject", "smtp", "sendmail", "postfix"],
+        "event_id": [3008]
+    },
+    "4013": {
+        "class_name": "NTP Activity", 
+        "keywords": ["time sync", "time server", "synchronization", "ntp", "ntpd", "ntpq", "offset", "drift", "clock skew", "stratum"],
+        "event_id": []
+    },
+    "4014": {
+        "class_name": "Tunnel Activity", 
+        "keywords": ["tunnel established", "vpn", "encryption", "ipsec", "openvpn", "wireguard", "pptp", "l2tp", "tun0", "gre"],
+        "event_id": []
+    },
+    "5001": {
+        "class_name": "Device Inventory Info", 
+        "keywords": ["device", "device type", "hostname", "mac address", "ip address", "inventory", "asset", "hardware", "system info", "manufacturer"],
+        "event_id": [6005]
+    },
+    "5003": {
+        "class_name": "User Inventory Info", 
+        "keywords": ["user", "username", "uid", "gid", "group", "user info", "home directory", "shell", "profile", "last login"],
+        "event_id": []
+    },
+    "5004": {
+        "class_name": "Operating System Patch State", 
+        "keywords": ["security update", "patch", "update", "package update", "installed", "kernel version", "os version", "dpkg", "apt", "yum"],
+        "event_id": [19, 20, 21]
+    },
+    "5019": {
+        "class_name": "Device Config State Change", 
+        "keywords": ["config changed", "setting updated", "change detected", "device setting", "system setting", "interface config", "network config", "service config", "firewall config", "audit config"],
+        "event_id": []
+    },
+    "5020": {
+        "class_name": "Software Inventory Info", 
+        "keywords": ["software", "installed", "removed", "package", "version", "apt", "dpkg", "rpm", "snap", "brew"],
+        "event_id": []
+    },
+    "5021": {
+        "class_name": "OSINT Inventory Info", 
+        "keywords": ["leaked", "exposed", "osint", "indicator", "public source", "public repo", "threat intel", "github", "pastebin", "shodan"],
+        "event_id": []
+    },
+    "5023": {
+        "class_name": "Cloud Resources Inventory Info", 
+        "keywords": ["cloud asset", "resource id", "instance", "vm", "s3", "region", "aws", "azure", "gcp", "cloud inventory"],
+        "event_id": []
+    },
+    "5040": {
+        "class_name": "Live Evidence Info", 
+        "keywords": ["live forensics", "evidence collected", "memory dump", "disk image", "volatile data", "process list", "open files", "bash history", "netstat", "timeline"],
+        "event_id": []
+    },
+    "6001": {
+        "class_name": "Web Resources Activity", 
+        "keywords": ["web accessed", "url", "domain", "browsing", "visited site", "http", "user-agent", "referrer", "resource loaded", "page title"],
+        "event_id": []
+    },
+    "6002": {
+        "class_name": "Application Lifecycle", 
+        "keywords": ["application started", "application ended", "install", "uninstall", "upgrade", "rollback", "process started", "service started", "service stopped", "update available"],
+        "event_id": []
+    },
+    "6003": {
+        "class_name": "API Activity", 
+        "keywords": ["api call", "endpoint", "payload", "status code", "GET", "POST", "PUT", "DELETE", "rest", "graphql"],
+        "event_id": []
+    },
+    "6005": {
+        "class_name": "Datastore Activity", 
+        "keywords": ["sql", "query", "select", "insert", "update", "delete", "database", "transaction", "db connection", "db user"],
+        "event_id": []
+    },
+    "6006": {
+        "class_name": "File Hosting Activity", 
+        "keywords": ["file uploaded", "file synced", "folder shared", "cloud storage", "public link", "onedrive", "google drive", "dropbox", "box", "sharefile"],
+        "event_id": []
+    },
+    "6007": {
+        "class_name": "Scan Activity", 
+        "keywords": ["scanner", "nmap", "nessus", "masscan", "port scan", "open port", "closed port", "udp scan", "syn scan", "xmas scan"],
+        "event_id": [8003]
+    },
+    "6008": {
+        "class_name": "Application Error", 
+        "keywords": ["error", "exception", "application failed", "crash", "fatal", "core dumped", "null pointer", "stack trace", "exit code", "error log"],
+        "event_id": [1000, 1001]
+    },
+    "7001": {
+        "class_name": "Remediation Activity", 
+        "keywords": ["remediated", "resolved", "mitigated", "quarantined", "cleaned", "threat neutralized", "incident resolved", "action taken", "containment", "issue closed"],
+        "event_id": []
+    },
+    "7002": {
+        "class_name": "File Remediation Activity", 
+        "keywords": ["malicious file", "file deleted", "quarantined file", "cleaned file", "file purged", "file removed", "file locked", "restored file", "encrypted file", "renamed file"],
+        "event_id": [5058, 5061]
+    },
+    "7003": {
+        "class_name": "Process Remediation Activity", 
+        "keywords": ["process killed", "process terminated", "quarantined process", "neutralized process", "blocked process", "mitigated", "suspicious process", "restarted process", "shutdown", "service stopped"],
+        "event_id": [4689]
+    },
+    "7004": {
+        "class_name": "Network Remediation Activity", 
+        "keywords": ["ip blocked", "host blacklisted", "connection dropped", "connection reset", "port closed", "firewall rule", "network rule applied", "access revoked", "quarantine network", "MAC blocked"],
+        "event_id": [5158]
+    },
+    "8001": {
+        "class_name": "Drone Flights Activity", 
+        "keywords": ["drone", "UAV", "flight path", "takeoff", "landing", "waypoint", "remote control", "altitude", "telemetry", "airspace"],
+        "event_id": []
+    },
+    "8002": {
+        "class_name": "Airborne Broadcast Activity", 
+        "keywords": ["ads-b", "broadcast", "beacon", "airborne", "icao", "flight id", "squawk", "altitude", "latitude", "longitude"],
+        "event_id": []
+    }
+}
