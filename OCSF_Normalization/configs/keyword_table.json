@@ -1,268 +1,321 @@
 {
     "1001": {
-        "class_name": "File System Activity", 
+        "class_name": "File System Activity",
         "keywords": ["file created", "file deleted", "file modified", "file opened", "chmod", "rm", "unlink", "mv", "cp", "touch", "inotify", "audit"],
-        "event_id": [4663, 5140, 5145]
+        "event_id": [4663, 5140, 5145],
+        "aws_keywords": []
     },
     "1002": {
-        "class_name": "Kernel Extension Activity", 
+        "class_name": "Kernel Extension Activity",
         "keywords": ["insmod", "rmmod", "modprobe", "kernel module", "load module", "kernel extension", "init_module", "finit_module", "kextload", "kextunload"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "1003": {
-        "class_name": "Kernel Activity", 
+        "class_name": "Kernel Activity",
         "keywords": ["kernel panic", "BUG:", "soft lockup", "hard lockup", "tainted", "traps", "kernel", "dmesg", "usb", "driver"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "1004": {
-        "class_name": "Memory Activity", 
+        "class_name": "Memory Activity",
         "keywords": ["OOM", "segfault", "buffer overflow", "heap overflow", "out of memory", "memory corruption", "malloc failed", "free(): invalid", "invalid pointer", "memory leak"],
-        "event_id": []
-        
+        "event_id": [],
+        "aws_keywords": []
+
     },
     "1005": {
-        "class_name": "Module Activity", 
+        "class_name": "Module Activity",
         "keywords": ["module loaded", "module unloaded", "module registered", "module initialized", "module cleanup", "dlopen", "ld.so", "dynamic library", "shared object", ".so"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "1006": {
-        "class_name": "Scheduled Job Activity", 
+        "class_name": "Scheduled Job Activity",
         "keywords": ["CRON", "cron executed", "scheduled job", "job started", "cron.daily", "at job", "crontab", "CMD", "periodic task", "anacron"],
-        "event_id": [4698, 4702]
+        "event_id": [4698, 4702],
+        "aws_keywords": []
     },
     "1007": {
-        "class_name": "Process Activity", 
+        "class_name": "Process Activity",
         "keywords": ["exec", "fork", "kill", "terminated", "process started", "process exited", "pid=", "systemd", "zombie", "ps"],
-        "event_id": [4688, 4689, 4697]
+        "event_id": [7036, 4688, 4689, 4697],
+        "aws_keywords": ["ec2.amazonaws.comRunInstances", "ec2.amazonaws.comStartInstances", "ec2.amazonaws.comStopInstances", "ec2.amazonaws.comRebootInstances", "ec2.amazonaws.comTerminateInstances"]
     },
     "1008": {
-        "class_name": "Event Log Activity", 
+        "class_name": "Event Log Activity",
         "keywords": ["event log", "event recorded", "event ID", "log entry", "log message", "log level", "journalctl", "syslog", "rsyslog", "system log"],
-        "event_id": [1100, 1102]
+        "event_id": [1100, 1102],
+        "aws_keywords": []
     },
     "1009": {
-        "class_name": "Script Activity", 
+        "class_name": "Script Activity",
         "keywords": ["script executed", "bash", "powershell", "shell script", "script started", "command script", "#!/bin", ".sh", ".py", "perl"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["ssm.amazonaws.comUpdateInstanceInformation"]
     },
     "2002": {
-        "class_name": "Vulnerability Finding", 
+        "class_name": "Vulnerability Finding",
         "keywords": ["CVE-", "zero day", "remote code execution", "buffer overflow", "exploit", "heap spray", "arbitrary code", "vulnerability", "affected version", "denial of service"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "2003": {
-        "class_name": "Compliance Finding", 
+        "class_name": "Compliance Finding",
         "keywords": ["audit failure", "policy violation", "rule violated", "check failed", "non-compliant", "standard unmet", "configuration drift", "compliance", "cis benchmark", "compliance check"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "2004": {
-        "class_name": "Detection Finding", 
+        "class_name": "Detection Finding",
         "keywords": ["webshell", "attempted","modsecurity", "alert", "rule match", "signature detected", "triggered", "detection", "threat", "unauthorized access", "intrusion", "indicator", "incident"],
-        "event_id": [4104]
+        "event_id": [4104],
+        "aws_keywords": []
     },
     "2005": {
-        "class_name": "Incident Finding", 
+        "class_name": "Incident Finding",
         "keywords": ["incident", "breach", "case opened", "incident id", "escalation", "case status", "response", "containment", "forensics", "timeline"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "2006": {
-        "class_name": "Data Security Finding", 
+        "class_name": "Data Security Finding",
         "keywords": ["data leak", "data exfiltration", "leak detected", "confidential", "data exposure", "sensitive file", "unauthorized transfer", "PII", "GDPR", "HIPAA"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "2007": {
-        "class_name": "Application Security Posture Finding", 
+        "class_name": "Application Security Posture Finding",
         "keywords": ["vulnerable component", "dependency", "sast", "code scan", "library check", "component risk", "dependency checker", "security rating", "SBOM", "appsec"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "3001": {
-        "class_name": "Account Change", 
+        "class_name": "Account Change",
         "keywords": ["account created", "account deleted", "useradd", "userdel", "usermod", "passwd", "chage", "uid", "groupadd", "groupdel"],
-        "event_id": [4720, 4722, 4723, 4724, 4725, 4726]
+        "event_id": [4720, 4722, 4723, 4724, 4725, 4726],
+        "aws_keywords": ["kms.amazonaws.comCreateGrant"]
     },
     "3002": {
-        "class_name": "Authentication", 
+        "class_name": "Authentication",
         "keywords": ["authentication failure", "Failed password", "invalid user", "login attempt", "Accepted password", "login", "password changed", "session opened", "pam_unix", "sshd"],
-        "event_id": [4624, 4625, 4648, 4672, 4768, 4769, 4776]
+        "event_id": [4634, 4624, 4625, 4648, 4672, 4768, 4769, 4776],
+        "aws_keywords": ["signin.amazonaws.comConsoleLogin", "ec2-instance-connect.amazonaws.comSendSSHPublicKey"]
     },
     "3003": {
-        "class_name": "Authorize Session", 
+        "class_name": "Authorize Session",
         "keywords": ["access granted", "authorized", "authorization success", "session created", "session established", "session id", "JWT", "token", "authz", "role granted"],
-        "event_id": [4778, 4779]
+        "event_id": [4778, 4779],
+        "aws_keywords": []
     },
     "3004": {
-        "class_name": "Entity Management", 
+        "class_name": "Entity Management",
         "keywords": ["entity created", "entity deleted", "record updated", "entity", "entity id", "entity name", "identity", "directory", "directory update", "ldap"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "3005": {
-        "class_name": "User Access Management", 
+        "class_name": "User Access Management",
         "keywords": ["access granted", "access revoked", "login enabled", "login disabled", "permission changed", "access updated", "role assigned", "group membership", "access policy", "acl"],
-        "event_id": [4717]
+        "event_id": [4717, 5379],
+        "aws_keywords": ["ec2.amazonaws.comAssociateIamInstanceProfile", "ssm.amazonaws.comRegisterManagedInstance", "ec2.amazonaws.comImportKeyPair"]
     },
     "3006": {
-        "class_name": "Group Management", 
+        "class_name": "Group Management",
         "keywords": ["group created", "group deleted", "group updated", "group renamed", "group privileges", "group policy", "group membership", "groupadd", "groupdel", "groupmod"],
-        "event_id": [4731, 4732, 4733, 4734, 4798]
+        "event_id": [4731, 4732, 4733, 4734, 4798],
+        "aws_keywords": []
     },
     "4001": {
-        "class_name": "Network Activity", 
-        "keywords": ["network connection", "connection established", "port scan", "TCP", "UDP", "src_ip", "dst_ip", "protocol", "packet", "netstat"],
-        "event_id": [5156, 5158]
+        "class_name": "Network Activity",
+        "keywords": ["network connection", "connection established", "port scan", "TCP", "UDP", "src_ip", "dst_ip", "protocol", "packet", "netstat", "ec2.amazonaws.comCreateSubnet", "ec2.amazonaws.comDeleteInternetGateway", "ec2.amazonaws.comDeleteRouteTable", "ec2.amazonaws.comDeleteSecurityGroup", "ec2.amazonaws.comDeleteSubnet", "ec2.amazonaws.comDetachInternetGateway", "ec2.amazonaws.comDisassociateAddress"],
+        "event_id": [5156, 5158],
+        "aws_keywords": ["ec2.amazonaws.comCreateFlowLogs", "ec2.amazonaws.comDeleteFlowLogs", "ec2.amazonaws.comCreateSecurityGroup",  "ec2.amazonaws.comAuthorizeSecurityGroupIngress", "ec2.amazonaws.comAuthorizeSecurityGroupEgress", "ec2.amazonaws.comRevokeSecurityGroupIngress", "ec2.amazonaws.comRevokeSecurityGroupEgress”, “ec2.amazonaws.comCreateRoute”, “ec2.amazonaws.comReplaceRoute”, “ec2.amazonaws.comDeleteRoute", "ec2.amazonaws.comCreateSubnet", "ec2.amazonaws.comCreateVpc", "ec2.amazonaws.comDeleteRouteTable", "ec2.amazonaws.comDeleteSecurityGroup", "ec2.amazonaws.comDeleteSubnet", "ec2.amazonaws.comDeleteVpc", "ec2.amazonaws.comDetachInternetGateway", "ec2.amazonaws.comDisassociateRouteTable", "ec2.amazonaws.comAssociateRouteTable", "ec2.amazonaws.comAttachInternetGateway", "ec2.amazonaws.comCreateInternetGateway", "ec2.amazonaws.comCreateRouteTable", "ec2.amazonaws.comDeleteInternetGateway"]
     },
     "4002": {
-        "class_name": "HTTP Activity", 
+        "class_name": "HTTP Activity",
         "keywords": ["http request", "GET", "POST", "HTTP/1.1", "status=", "host=", "user-agent", "referer=", "apache", "nginx"],
-        "event_id": [5156, 5158]
+        "event_id": [5156, 5158],
+        "aws_keywords": []
     },
     "4003": {
-        "class_name": "DNS Activity", 
+        "class_name": "DNS Activity",
         "keywords": ["DNS query", "DNS response", "domain name", "resolver", "A record", "AAAA", "MX record", "PTR", "dig", "nslookup"],
-        "event_id": [5154, 5155]
+        "event_id": [5154, 5155],
+        "aws_keywords": []
     },
     "4004": {
-        "class_name": "DHCP Activity", 
+        "class_name": "DHCP Activity",
         "keywords": ["dhcp discover", "dhcp offer", "dhcp request", "dhcp ack", "ip assigned", "lease time", "renew", "release", "dhclient", "bootp"],
-        "event_id": [1048]
+        "event_id": [1048],
+        "aws_keywords": []
     },
     "4005": {
-        "class_name": "RDP Activity", 
+        "class_name": "RDP Activity",
         "keywords": ["rdp session", "rdp", "remote desktop", "mstsc", "logon", "disconnect", "reconnect", "3389", "rdpsnd", "rdpssl"],
-        "event_id": [1149]
+        "event_id": [1149],
+        "aws_keywords": []
     },
     "4006": {
-        "class_name": "SMB Activity", 
+        "class_name": "SMB Activity",
         "keywords": ["smb", "smbclient", "cifs", "file server", "share", "access denied", "authentication", "session setup", "net use", "\\"],
-        "event_id": [5140]
+        "event_id": [5140],
+        "aws_keywords": []
     },
     "4007": {
-        "class_name": "SSH Activity", 
+        "class_name": "SSH Activity",
         "keywords": ["ssh", "sshd", "login", "remote shell", "password auth", "publickey", "port 22", "key exchange", "scp", "sftp"],
-        "event_id": [4103]
+        "event_id": [4103],
+        "aws_keywords": []
     },
     "4008": {
-        "class_name": "FTP Activity", 
+        "class_name": "FTP Activity",
         "keywords": ["ftp", "file upload", "file download", "user", "pass", "login", "transfer complete", "port 21", "passive mode", "active mode"],
-        "event_id": [6272]
+        "event_id": [6272],
+        "aws_keywords": []
     },
     "4009": {
-        "class_name": "Email Activity", 
+        "class_name": "Email Activity",
         "keywords": ["email sent", "email received", "phishing", "spam", "mail from", "rcpt to", "subject", "smtp", "sendmail", "postfix"],
-        "event_id": [3008]
+        "event_id": [3008],
+        "aws_keywords": []
     },
     "4013": {
-        "class_name": "NTP Activity", 
+        "class_name": "NTP Activity",
         "keywords": ["time sync", "time server", "synchronization", "ntp", "ntpd", "ntpq", "offset", "drift", "clock skew", "stratum"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "4014": {
-        "class_name": "Tunnel Activity", 
+        "class_name": "Tunnel Activity",
         "keywords": ["tunnel established", "vpn", "encryption", "ipsec", "openvpn", "wireguard", "pptp", "l2tp", "tun0", "gre"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "5001": {
-        "class_name": "Device Inventory Info", 
+        "class_name": "Device Inventory Info",
         "keywords": ["device", "device type", "hostname", "mac address", "ip address", "inventory", "asset", "hardware", "system info", "manufacturer"],
-        "event_id": [6005]
+        "event_id": [6005],
+        "aws_keywords": []
     },
     "5003": {
-        "class_name": "User Inventory Info", 
+        "class_name": "User Inventory Info",
         "keywords": ["user", "username", "uid", "gid", "group", "user info", "home directory", "shell", "profile", "last login"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "5004": {
-        "class_name": "Operating System Patch State", 
+        "class_name": "Operating System Patch State",
         "keywords": ["security update", "patch", "update", "package update", "installed", "kernel version", "os version", "dpkg", "apt", "yum"],
-        "event_id": [19, 20, 21]
+        "event_id": [19, 20, 21],
+        "aws_keywords": []
     },
     "5019": {
-        "class_name": "Device Config State Change", 
+        "class_name": "Device Config State Change",
         "keywords": ["config changed", "setting updated", "change detected", "device setting", "system setting", "interface config", "network config", "service config", "firewall config", "audit config"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["ec2.amazonaws.comModifyInstanceAttribute", "ec2.amazonaws.comModifyInstanceMetadataOptions", "ec2.amazonaws.comModifyNetworkInterfaceAttribute", "ec2.amazonaws.comModifyVolume", "ec2.amazonaws.comModifyVpcAttribute", "ec2.amazonaws.comReleaseAddress", "ec2.amazonaws.comSharedSnapshotVolumeCreated", "ecs.amazonaws.comPutAccountSettingDefault"]
     },
     "5020": {
-        "class_name": "Software Inventory Info", 
+        "class_name": "Software Inventory Info",
         "keywords": ["software", "installed", "removed", "package", "version", "apt", "dpkg", "rpm", "snap", "brew"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "5021": {
-        "class_name": "OSINT Inventory Info", 
+        "class_name": "OSINT Inventory Info",
         "keywords": ["leaked", "exposed", "osint", "indicator", "public source", "public repo", "threat intel", "github", "pastebin", "shodan"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "5023": {
-        "class_name": "Cloud Resources Inventory Info", 
+        "class_name": "Cloud Resources Inventory Info",
         "keywords": ["cloud asset", "resource id", "instance", "vm", "s3", "region", "aws", "azure", "gcp", "cloud inventory"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["cloudtrail.amazonaws.comStartLogging", "guardduty.amazonaws.comCreateDetector", "guardduty.amazonaws.comDeleteDetector", "guardduty.amazonaws.comUpdateDetector", "cloudtrail.amazonaws.comCreateTrail", "autoscaling.amazonaws.comPutScalingPolicy", "ec2.amazonaws.comCreateVpcResourceCreation", "ec2.amazonaws.comDeleteVolume", "ec2.amazonaws.comDeleteVpcResourceDeletion", "ec2.amazonaws.comDetachVolume", "ec2.amazonaws.comDisassociateAddress", "cloudshell.amazonaws.comCreateEnvironment", "cloudshell.amazonaws.comCreateSession", "cloudshell.amazonaws.comDeleteSession", "cloudshell.amazonaws.comPutCredentials", "ec2.amazonaws.comCreateKeyPair", "ec2.amazonaws.comAllocateAddress", "ec2.amazonaws.comAssociateAddress", "ec2.amazonaws.comAttachVolume", "ec2.amazonaws.comAutomatedDefaultVpcCreation", "ec2.amazonaws.comCreateDefaultVpcResourceCreation", "ec2.amazonaws.comCreateVpc", "ec2.amazonaws.comCreateVpcResourceCreation", "ec2.amazonaws.com DeleteVolume", "ec2.amazonaws.com DeleteVpc", "ec2.amazonaws.com DeleteVpcResourceDeletion", "ec2.amazonaws.comDetachVolume"]
     },
     "5040": {
-        "class_name": "Live Evidence Info", 
+        "class_name": "Live Evidence Info",
         "keywords": ["live forensics", "evidence collected", "memory dump", "disk image", "volatile data", "process list", "open files", "bash history", "netstat", "timeline"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "6001": {
-        "class_name": "Web Resources Activity", 
+        "class_name": "Web Resources Activity",
         "keywords": ["web accessed", "url", "domain", "browsing", "visited site", "http", "user-agent", "referrer", "resource loaded", "page title"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "6002": {
-        "class_name": "Application Lifecycle", 
+        "class_name": "Application Lifecycle",
         "keywords": ["application started", "application ended", "install", "uninstall", "upgrade", "rollback", "process started", "service started", "service stopped", "update available"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "6003": {
-        "class_name": "API Activity", 
+        "class_name": "API Activity",
         "keywords": ["api call", "endpoint", "payload", "status code", "GET", "POST", "PUT", "DELETE", "rest", "graphql"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "6005": {
-        "class_name": "Datastore Activity", 
+        "class_name": "Datastore Activity",
         "keywords": ["sql", "query", "select", "insert", "update", "delete", "database", "transaction", "db connection", "db user"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["kms.amazonaws.comEnableKeyRotation", "kms.amazonaws.comCreateKey", "kms.amazonaws.comPutKeyPolicy"]
     },
     "6006": {
-        "class_name": "File Hosting Activity", 
+        "class_name": "File Hosting Activity",
         "keywords": ["file uploaded", "file synced", "folder shared", "cloud storage", "public link", "onedrive", "google drive", "dropbox", "box", "sharefile"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["s3.amazonaws.comCreateBucket", "s3.amazonaws.comDeleteBucket", "s3.amazonaws.comPutBucketPolicy", "s3.amazonaws.comPutBucketNotification", "s3.amazonaws.comPutBucketEncryption", "dynamodb.amazonaws.comCreateTable", "sqs.amazonaws.comCreateQueue", "sqs.amazonaws.comSetQueueAttributes"]
     },
     "6007": {
-        "class_name": "Scan Activity", 
+        "class_name": "Scan Activity",
         "keywords": ["scanner", "nmap", "nessus", "masscan", "port scan", "open port", "closed port", "udp scan", "syn scan", "xmas scan"],
-        "event_id": [8003]
+        "event_id": [8003],
+        "aws_keywords": []
     },
     "6008": {
-        "class_name": "Application Error", 
+        "class_name": "Application Error",
         "keywords": ["error", "exception", "application failed", "crash", "fatal", "core dumped", "null pointer", "stack trace", "exit code", "error log"],
-        "event_id": [1000, 1001]
+        "event_id": [1000, 1001],
+        "aws_keywords": []
     },
     "7001": {
-        "class_name": "Remediation Activity", 
+        "class_name": "Remediation Activity",
         "keywords": ["remediated", "resolved", "mitigated", "quarantined", "cleaned", "threat neutralized", "incident resolved", "action taken", "containment", "issue closed"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": ["guardduty.amazonaws.comCreatePublishingDestination"]
     },
     "7002": {
-        "class_name": "File Remediation Activity", 
+        "class_name": "File Remediation Activity",
         "keywords": ["malicious file", "file deleted", "quarantined file", "cleaned file", "file purged", "file removed", "file locked", "restored file", "encrypted file", "renamed file"],
-        "event_id": [5058, 5061]
+        "event_id": [5058, 5061],
+        "aws_keywords": []
     },
     "7003": {
-        "class_name": "Process Remediation Activity", 
+        "class_name": "Process Remediation Activity",
         "keywords": ["process killed", "process terminated", "quarantined process", "neutralized process", "blocked process", "mitigated", "suspicious process", "restarted process", "shutdown", "service stopped"],
-        "event_id": [4689]
+        "event_id": [4689],
+        "aws_keywords": ["kms.amazonaws.comRetireGrant"]
     },
     "7004": {
-        "class_name": "Network Remediation Activity", 
+        "class_name": "Network Remediation Activity",
         "keywords": ["ip blocked", "host blacklisted", "connection dropped", "connection reset", "port closed", "firewall rule", "network rule applied", "access revoked", "quarantine network", "MAC blocked"],
-        "event_id": [5158]
+        "event_id": [5158],
+        "aws_keywords": []
     },
     "8001": {
-        "class_name": "Drone Flights Activity", 
+        "class_name": "Drone Flights Activity",
         "keywords": ["drone", "UAV", "flight path", "takeoff", "landing", "waypoint", "remote control", "altitude", "telemetry", "airspace"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     },
     "8002": {
-        "class_name": "Airborne Broadcast Activity", 
+        "class_name": "Airborne Broadcast Activity",
         "keywords": ["ads-b", "broadcast", "beacon", "airborne", "icao", "flight id", "squawk", "altitude", "latitude", "longitude"],
-        "event_id": []
+        "event_id": [],
+        "aws_keywords": []
     }
 }
