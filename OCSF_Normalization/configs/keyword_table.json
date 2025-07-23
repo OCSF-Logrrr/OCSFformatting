@@ -46,7 +46,7 @@
         "class_name": "Event Log Activity",
         "keywords": ["event log", "event recorded", "event ID", "log entry", "log message", "log level", "journalctl", "syslog", "rsyslog", "system log"],
         "event_id": [1100, 1102],
-        "aws_keywords": []
+        "aws_keywords": ["events.amazonaws.comDeleteRule", "events.amazonaws.comPutRule", "events.amazonaws.comPutTargets", "events.amazonaws.comRemoveTargets", "logs.amazonaws.comCreateLogGroup", "logs.amazonaws.comCreateLogStream", "logs.amazonaws.comPutRetentionPolicy"]
     },
     "1009": {
         "class_name": "Script Activity",
@@ -70,7 +70,7 @@
         "class_name": "Detection Finding",
         "keywords": ["webshell", "attempted","modsecurity", "alert", "rule match", "signature detected", "triggered", "detection", "threat", "unauthorized access", "intrusion", "indicator", "incident"],
         "event_id": [4104],
-        "aws_keywords": []
+        "aws_keywords": ["guardduty.amazonaws.comArchiveFindings", "guardduty.amazonaws.comCreateSampleFindings", "guardduty.amazonaws.comDeletePublishingDestination", "guardduty.amazonaws.comStartMalwareScan", "guardduty.amazonaws.comUpdateFindingsFeedback"]
     },
     "2005": {
         "class_name": "Incident Finding",
@@ -244,19 +244,20 @@
         "class_name": "Web Resources Activity",
         "keywords": ["web accessed", "url", "domain", "browsing", "visited site", "http", "user-agent", "referrer", "resource loaded", "page title"],
         "event_id": [],
-        "aws_keywords": []
+        "aws_keywords": ["codepipeline.amazonaws.comCreateGithubOAuthAccessToken", "codepipeline.amazonaws.comPutWebhook", "codepipeline.amazonaws.comRegisterWebhookWithThirdParty", "codepipeline.amazonaws.comTriggerWebhook"]
     },
     "6002": {
         "class_name": "Application Lifecycle",
         "keywords": ["application started", "application ended", "install", "uninstall", "upgrade", "rollback", "process started", "service started", "service stopped", "update available"],
         "event_id": [],
-        "aws_keywords": []
+        "aws_keywords": ["cloudshell.amazonaws.comStartEnvironment", "codepipeline.amazonaws.comRetryStageExecution"]
     },
     "6003": {
         "class_name": "API Activity",
         "keywords": ["api call", "endpoint", "payload", "status code", "GET", "POST", "PUT", "DELETE", "rest", "graphql"],
         "event_id": [],
-        "aws_keywords": []
+        "aws_keywords": ["codebuild.amazonaws.comCreateProject", "codebuild.amazonaws.comStartBuild", "codebuild.amazonaws.comUpdateProject", "codedeploy.amazonaws.comCreateApplication", "codedeploy.amazonaws.comCreateDeployment", "codedeploy.amazonaws.comCreateDeploymentGroup", "codepipeline.amazonaws.comCreatePipeline", "codepipeline.amazonaws.comStartPipelineExecution", "codepipeline.amazonaws.comStopPipelineExecution", "ec2.amazonaws.comCreateNetworkInterface", "ec2.amazonaws.comCreateSnapshot", "ec2.amazonaws.comCreateVolume", "ec2.amazonaws.comDeleteNetworkInterface", "ec2.amazonaws.comDeleteSnapshot", "ec2.amazonaws.comModifySnapshotAttribute", "ec2.amazonaws.comModifySubnetAttribute", "elasticloadbalancing.amazonaws.comCreateListener", "elasticloadbalancing.amazonaws.comCreateLoadBalancer", "elasticloadbalancing.amazonaws.comCreateTargetGroup", "elasticloadbalancing.amazonaws.comDeleteLoadBalancer", "elasticloadbalancing.amazonaws.comDeregisterTargets", "elasticloadbalancing.amazonaws.comModifyLoadBalancerAttributes", "elasticloadbalancing.amazonaws.comModifyTargetGroupAttributes", "elasticloadbalancing.amazonaws.comRegisterTargets", "lambda.amazonaws.comCreateEventSourceMapping20150331", "lambda.amazonaws.comCreateFunction20150331", "lambda.amazonaws.comPublishLayerVersion20181031", "lambda.amazonaws.comPutFunctionEventInvokeConfig", "lambda.amazonaws.comUpdateFunctionCode20150331v2", "lambda.amazonaws.comUpdateFunctionConfiguration20150331v2", "sqs.amazonaws.comDeleteQueue", "ssm.amazonaws.comCreateAssociation", "ssm.amazonaws.comCreateDataChannel", "ssm.amazonaws.comOpenDataChannel", "ssm.amazonaws.comPutConfigurePackageResult", "ssm.amazonaws.comResumeSession",
+        "ssm.amazonaws.comSendCommand", "ssm.amazonaws.comStartSession", "ssm.amazonaws.comTerminateSession"]
     },
     "6005": {
         "class_name": "Datastore Activity",
