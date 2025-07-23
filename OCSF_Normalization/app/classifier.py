@@ -19,38 +19,29 @@ def predict_class(log: dict | str) -> int | None:
         cloudtrail = log.get("tags")
         guardduty = log.get("detail-type")
 
-        print(f"winlog = {winlog}\ncloudtrail = {cloudtrail}\nguardduty = {guardduty}\n") # delete
-
         if winlog:
-            print("winglog\n")  # delete
             event_id = int(winlog.get("event_id"))
             for class_uid, info in ALL_KEYWORDS.items():
                 if event_id in info.get("event_id"):
-                    print(f"event_id = {event_id}\nclass_uid = {class_uid}\n")  # delete
                     return int(class_uid)
 
 
         elif cloudtrail != None and "cloudtrail" in cloudtrail:
-            print("cloudtrail\n")  # delete
 
             try:
                 log_message = json.loads(log.get("message"))
 
                 eventsource = log_message.get("eventSource")
                 eventname = log_message.get("eventName")
-                print(eventsource+eventname)
 
                 for class_uid, info in ALL_KEYWORDS.items():
                     if eventsource + eventname in info.get("aws_keywords", []):
-                        print(f"class_uid = {class_uid}\n")
                         return int(class_uid)
             except Exception as e:
-                print("no eventName/enventSource -> 6005\n")
                 return 6005
 
 
         elif "GuardDuty" == guardduty:
-            print("GaurdDuty\n")
             if str(log.get("detail").get("type"))[:6] == "Policy":
                 return 2003
             else:
@@ -63,7 +54,6 @@ def predict_class(log: dict | str) -> int | None:
             if message:
                 matched = re.match(pattern, message.strip())
                 if matched:
-                    print("vpc flow\n")     # delete
                     return 4001
                 else:
                     return None
@@ -73,10 +63,8 @@ def predict_class(log: dict | str) -> int | None:
         log_text = str(log).lower()
 
 
-    print("all if passed\n") # delete!~!~!~
     if not log_text:
         return None
-
 
     match_scores = {}
 
