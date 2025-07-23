@@ -9,7 +9,7 @@ from app.kafka_handler import send_to_kafka
 
 
 CONCURRENT_TASKS = 10
-SKIP_CLASSES = {-1, 1003, 1008, 1006, 5001, 5003, 5020, 5023}
+SKIP_CLASSES = {None, -1, 1003, 1008, 1006, 5001, 5003, 5020, 5023}
 
 
 async def process_log(raw_log, kafka_lock):
