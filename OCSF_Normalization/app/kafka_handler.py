@@ -16,7 +16,7 @@ consumer_conf = {
     'max.poll.interval.ms': 60000000
 }
 consumer = Consumer(consumer_conf)
-consumer.subscribe([INPUT_KAFKA_TOPIC])
+consumer.subscribe(INPUT_KAFKA_TOPIC)
 
 # 출력용 Kafka 설정
 producer = Producer({'bootstrap.servers': OUTPUT_KAFKA_BOOTSTRAP_SERVERS})
