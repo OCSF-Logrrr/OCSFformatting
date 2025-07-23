@@ -24,7 +24,7 @@ project_root/
 │
 ├── app/
 │   ├── __init__.py
-│   ├── classifier.pyx      # 로그가 어떤 클래스인지 판단
+│   ├── classifier.py       # 로그가 어떤 클래스인지 판단
 │   ├── kafka_handler.py    # kafka handling
 │   ├── llm.py              # llm 사용 정보 관리
 │   ├── mapping.py          # 실질적인 필드 매핑 진행
@@ -42,7 +42,6 @@ project_root/
 │
 ├── __init__.py
 ├── main.py
-├── setup.py                # classifier.pyx를 통해 .so 파일을 생성
 └── requirements.txt
 ```
 
@@ -59,7 +58,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # 실행
-python3 setup.py build_ext --inplace
 python main.py
 ```
 
@@ -71,7 +69,7 @@ Kafka 브로커가 사전에 실행되어 있어야 하며,
 ## 🔄 로그 처리 흐름 요약
 
 1. Kafka에서 원본 로그 수신 (`stream_loop.py`)
-2. 로그가 몇 번 OCSF 클래스인지 판단 (`classifier.pyx`)
+2. 로그가 몇 번 OCSF 클래스인지 판단 (`classifier.py`)
 3. 관련 JSON 스키마 로딩 (`schema_loader.py`)
 4. 필드 정규화 및 매핑 (`mapping.py`)
 5. LLM 모델 설정 (`llm.py`)
