@@ -56,7 +56,7 @@
     },
     "2002": {
         "class_name": "Vulnerability Finding",
-        "keywords": ["CVE-", "zero day", "remote code execution", "buffer overflow", "exploit", "heap spray", "arbitrary code", "vulnerability", "affected version", "denial of service"],
+        "keywords": ["pkexec", "CVE-", "zero day", "remote code execution", "buffer overflow", "exploit", "heap spray", "arbitrary code", "vulnerability", "affected version", "denial of service"],
         "event_id": [],
         "aws_keywords": []
     },
@@ -68,7 +68,7 @@
     },
     "2004": {
         "class_name": "Detection Finding",
-        "keywords": ["webshell", "attempted","modsecurity", "alert", "rule match", "signature detected", "triggered", "detection", "threat", "unauthorized access", "intrusion", "indicator", "incident"],
+        "keywords": ["sql injection", "suricata-fast", "webshell", "attempted","modsecurity", "alert", "rule match", "signature detected", "triggered", "detection", "threat", "unauthorized access", "intrusion", "indicator", "incident", "suricata"],
         "event_id": [4104],
         "aws_keywords": ["guardduty.amazonaws.comArchiveFindings", "guardduty.amazonaws.comCreateSampleFindings", "guardduty.amazonaws.comDeletePublishingDestination", "guardduty.amazonaws.comStartMalwareScan", "guardduty.amazonaws.comUpdateFindingsFeedback"]
     },
@@ -98,7 +98,7 @@
     },
     "3002": {
         "class_name": "Authentication",
-        "keywords": ["authentication failure", "Failed password", "invalid user", "login attempt", "Accepted password", "login", "password changed", "session opened", "pam_unix", "sshd"],
+        "keywords": ["FAILED SU", "authentication failure", "Failed password", "invalid user", "login attempt", "Accepted password", "login", "password changed", "session opened", "pam_unix", "sshd"],
         "event_id": [4634, 4624, 4625, 4648, 4672, 4768, 4769, 4776],
         "aws_keywords": ["signin.amazonaws.comConsoleLogin", "ec2-instance-connect.amazonaws.comSendSSHPublicKey"]
     },
@@ -256,7 +256,8 @@
         "class_name": "API Activity",
         "keywords": ["api call", "endpoint", "payload", "status code", "GET", "POST", "PUT", "DELETE", "rest", "graphql"],
         "event_id": [],
-        "aws_keywords": ["codebuild.amazonaws.comCreateProject", "codebuild.amazonaws.comStartBuild", "codebuild.amazonaws.comUpdateProject", "codedeploy.amazonaws.comCreateApplication", "codedeploy.amazonaws.comCreateDeployment", "codedeploy.amazonaws.comCreateDeploymentGroup", "codepipeline.amazonaws.comCreatePipeline", "codepipeline.amazonaws.comStartPipelineExecution", "codepipeline.amazonaws.comStopPipelineExecution", "ec2.amazonaws.comCreateNetworkInterface", "ec2.amazonaws.comCreateSnapshot", "ec2.amazonaws.comCreateVolume", "ec2.amazonaws.comDeleteNetworkInterface", "ec2.amazonaws.comDeleteSnapshot", "ec2.amazonaws.comModifySnapshotAttribute", "ec2.amazonaws.comModifySubnetAttribute", "elasticloadbalancing.amazonaws.comCreateListener", "elasticloadbalancing.amazonaws.comCreateLoadBalancer", "elasticloadbalancing.amazonaws.comCreateTargetGroup", "elasticloadbalancing.amazonaws.comDeleteLoadBalancer", "elasticloadbalancing.amazonaws.comDeregisterTargets", "elasticloadbalancing.amazonaws.comModifyLoadBalancerAttributes", "elasticloadbalancing.amazonaws.comModifyTargetGroupAttributes", "elasticloadbalancing.amazonaws.comRegisterTargets", "lambda.amazonaws.comCreateEventSourceMapping20150331", "lambda.amazonaws.comCreateFunction20150331", "lambda.amazonaws.comPublishLayerVersion20181031", "lambda.amazonaws.comPutFunctionEventInvokeConfig", "lambda.amazonaws.comUpdateFunctionCode20150331v2", "lambda.amazonaws.comUpdateFunctionConfiguration20150331v2", "sqs.amazonaws.comDeleteQueue", "ssm.amazonaws.comCreateAssociation", "ssm.amazonaws.comCreateDataChannel", "ssm.amazonaws.comOpenDataChannel", "ssm.amazonaws.comPutConfigurePackageResult", "ssm.amazonaws.comResumeSession", "ssm.amazonaws.comSendCommand", "ssm.amazonaws.comStartSession", "ssm.amazonaws.comTerminateSession"]
+        "aws_keywords": ["codebuild.amazonaws.comCreateProject", "codebuild.amazonaws.comStartBuild", "codebuild.amazonaws.comUpdateProject", "codedeploy.amazonaws.comCreateApplication", "codedeploy.amazonaws.comCreateDeployment", "codedeploy.amazonaws.comCreateDeploymentGroup", "codepipeline.amazonaws.comCreatePipeline", "codepipeline.amazonaws.comStartPipelineExecution", "codepipeline.amazonaws.comStopPipelineExecution", "ec2.amazonaws.comCreateNetworkInterface", "ec2.amazonaws.comCreateSnapshot", "ec2.amazonaws.comCreateVolume", "ec2.amazonaws.comDeleteNetworkInterface", "ec2.amazonaws.comDeleteSnapshot", "ec2.amazonaws.comModifySnapshotAttribute", "ec2.amazonaws.comModifySubnetAttribute", "elasticloadbalancing.amazonaws.comCreateListener", "elasticloadbalancing.amazonaws.comCreateLoadBalancer", "elasticloadbalancing.amazonaws.comCreateTargetGroup", "elasticloadbalancing.amazonaws.comDeleteLoadBalancer", "elasticloadbalancing.amazonaws.comDeregisterTargets", "elasticloadbalancing.amazonaws.comModifyLoadBalancerAttributes", "elasticloadbalancing.amazonaws.comModifyTargetGroupAttributes", "elasticloadbalancing.amazonaws.comRegisterTargets", "lambda.amazonaws.comCreateEventSourceMapping20150331", "lambda.amazonaws.comCreateFunction20150331", "lambda.amazonaws.comPublishLayerVersion20181031", "lambda.amazonaws.comPutFunctionEventInvokeConfig", "lambda.amazonaws.comUpdateFunctionCode20150331v2", "lambda.amazonaws.comUpdateFunctionConfiguration20150331v2", "sqs.amazonaws.comDeleteQueue", "ssm.amazonaws.comCreateAssociation", "ssm.amazonaws.comCreateDataChannel", "ssm.amazonaws.comOpenDataChannel", "ssm.amazonaws.comPutConfigurePackageResult", "ssm.amazonaws.comResumeSession",
+        "ssm.amazonaws.comSendCommand", "ssm.amazonaws.comStartSession", "ssm.amazonaws.comTerminateSession"]
     },
     "6005": {
         "class_name": "Datastore Activity",
