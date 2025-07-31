@@ -27,16 +27,18 @@ def predict_class(log: dict | str) -> int | None:
 
 
         elif cloudtrail != None and "cloudtrail" in cloudtrail:
-
+            
             try:
                 log_message = json.loads(log.get("message"))
+                if log_message.get("sourceIPAddress"):
+                    return 6003
+                    
+#                eventsource = log_message.get("eventSource")
+#                eventname = log_message.get("eventName")
 
-                eventsource = log_message.get("eventSource")
-                eventname = log_message.get("eventName")
-
-                for class_uid, info in ALL_KEYWORDS.items():
-                    if eventsource + eventname in info.get("aws_keywords", []):
-                        return int(class_uid)
+#                for class_uid, info in ALL_KEYWORDS.items():
+#                    if eventsource + eventname in info.get("aws_keywords", []):
+#                        return int(class_uid)
             except Exception as e:
                 return 6005
 
