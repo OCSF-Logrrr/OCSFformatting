@@ -3,7 +3,7 @@
 
 [![OCSF](https://img.shields.io/badge/OCSF.io-Standard-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYi...)](https://ocsf.io/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![OpenAI](https://img.shields.io/badge/LLM-OpenAI-412991?logo=openai&logoColor=white)](https://openai.com/)
+[![OpenAI](https://img.shields.io/badge/LLM-OpenAI-412991?logo=openai&logoColor=white)](https://platform.openai.com/docs/models/gpt-4.1-mini)
 
 
 # 📦 OCSFformatting
