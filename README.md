@@ -1,4 +1,5 @@
 # OCSF
+
 ---
 
 [![OCSF](https://img.shields.io/badge/OCSF.io-Standard-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYi...)](https://ocsf.io/)
@@ -6,14 +7,13 @@
 [![OpenAI](https://img.shields.io/badge/LLM-OpenAI-412991?logo=openai&logoColor=white)](https://platform.openai.com/docs/models/gpt-4.1-mini)
 
 
-# 📦 OCSFformatting
 
 OCSFformatting은 보안 로그를 [OCSF(Open Cybersecurity Schema Framework)](https://github.com/ocsf/ocsf-schema)에 기반한 통합 포맷으로 변환하는 Python 기반 자동화 도구입니다.  
 로그를 받아와 적절한 클래스와 필드에 매핑하고, OCSF 스키마에 맞는 JSON 형식으로 출력합니다.
 
 ---
 
-## ⚙️ 구성 요소
+## 구성 요소
 
 - `getlog`  
   Elasticsearch에 저장된 로그를 가져올 수 있는 파이썬 코드.  
@@ -27,6 +27,6 @@ OCSFformatting은 보안 로그를 [OCSF(Open Cybersecurity Schema Framework)](h
 
 ---
 
-## 📄 라이선스
+## 라이선스
 
 이 프로젝트는 [Apache 2.0 License](LICENSE)를 따릅니다.
