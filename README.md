@@ -1,3 +1,11 @@
+# OCSF
+---
+
+[![OCSF](https://img.shields.io/badge/OCSF.io-Standard-blue?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYi...)](https://ocsf.io/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![OpenAI](https://img.shields.io/badge/LLM-OpenAI-412991?logo=openai&logoColor=white)](https://openai.com/)
+
+
 # 📦 OCSFformatting
 
 OCSFformatting은 보안 로그를 [OCSF(Open Cybersecurity Schema Framework)](https://github.com/ocsf/ocsf-schema)에 기반한 통합 포맷으로 변환하는 Python 기반 자동화 도구입니다.  
